@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css?family=\
+Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+@import "hamburgers";
+
+////////////
+// LAYERS // z-index list
+////////////
+
+/*
+
+=> .site-navigation (mobile only) -> 90
+=> .hamburger-storage -> 100
+
+ */
+
+
+///////////////////////
+// GENERAL STRUCTURE //
+///////////////////////
+
+/*
+
+body
+=> .splash
+=> => .container
+=> => => .section
+=> => => => .row
+
+ */
+
+////////////////////////////
+// customizable variables //
+////////////////////////////
+
+$theme-orange: #ff8d53;
+$theme-white: #F8F0E7;
+$theme-blue: #70b9ee;
+$theme-gray: #323232;
+
+$site-font: 'Raleway', sans-serif;
+
+$page-background: $theme-blue;
+$page-text: $theme-gray;
+
+$header-text: $theme-gray;
+$header-accent: $theme-white;
+$logo-color: $theme-white;
+$header-border: $theme-white;
+$header-height: 80px;
+
+/////////////////
+// site styles //
+/////////////////
+
+html, body {
+	height: 100%;
+	margin: 0;
+	color: $theme-gray;
+	background: $theme-blue;
+	font-family: $site-font;
+}
+
+body.lock {
+	overflow: hidden;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	hyphens: manual;
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+}
+
+p {
+	font-size: 1.15rem;
+	font-weight: 400;
+	line-height: 2.5rem;
+}
+
+#header {
+	display: flex;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: $header-height;
+	border-bottom: 2px solid $theme-white;
+	padding: 0 20px;
+	justify-content: space-between;
+	align-items: center;
+	font-family: $site-font;
+	color: $header-text;
+	background: $theme-blue;
+
+	.site-title {
+		text-decoration: none;
+
+		.container {
+			display: flex;
+			align-items: center;
+
+			@if $logo-color == $theme-white {
+				.logo {
+					background-image: url("../images/logo/whiteV.svg");
+				}
+			} @else if $logo-color == $theme-orange {
+				.logo {
+					background-image: url("../images/logo/orangeV.svg");
+				}
+			} @else if $logo-color == $theme-blue {
+				.logo {
+					background-image: url("../images/logo/blueV.svg");
+				}
+			} @else if $logo-color == $theme-gray {
+				.logo {
+					background-image: url("../images/logo/grayV.svg");
+				}
+			} @else {
+				.logo {
+					background-image: url("../images/logo/blackV.svg");
+				}
+			}
+
+			.logo {
+				$logo-scale: 0.55;
+
+				height: $header-height * $logo-scale;
+				width: $header-height * $logo-scale;
+				background-position: center center;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+
+			h1 {
+				margin: 0 0 0 10px;
+				font-weight: 700;
+				color: $logo-color;
+			}
+			
+			#anthem-link {
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				animation: anthem-link-animation 3s linear infinite, spin 2s infinite;
+				text-decoration: none;
+				margin: 0 15px;
+				font-size: 1.5rem;
+			}
+
+			@keyframes spin {
+				from {transform:rotate(0deg);}
+				to {transform:rotate(360deg);}
+			}
+
+			@keyframes anthem-link-animation {
+				0% {
+					color: red;
+				}
+				20% {
+					color: orange;
+				}
+				40% {
+					color: yellow;
+				}
+				50% {
+					color: green;
+				}
+				60% {
+					color: teal;
+				}
+				70% {
+					color: deepskyblue;
+				}
+				80% {
+					color: blue;
+				}
+				90% {
+					color: indigo;
+				}
+				100% {
+					color: darkmagenta;
+				}
+			}
+		}
+	}
+	.site-title.current-page {
+		cursor: default;
+	}
+
+	.site-navigation {
+		font-size: 1.05rem;
+		font-weight: 500;
+
+		ul {
+			padding: 0;
+			list-style: none;
+
+			li {
+				display: block;
+				position: relative;
+				float: left;
+				margin: 0 3px;
+
+				> a {
+					padding: 10px 4px 5px 4px;
+					cursor: pointer;
+					text-decoration: none;
+				}
+			}
+
+			li:last-child a {
+				padding: 5px 0 5px 5px;
+			}
+
+			li.current-page a {
+				cursor: default;
+				border-bottom: 1px solid $header-accent;
+			}
+
+			li.current-page, li a:hover {
+				color: $header-accent;
+			}
+		}
+	}
+
+	.mobile-menu {
+		display: none;
+		z-index: 100;
+		padding: 0;
+		cursor: pointer;
+
+		* {
+			cursor: inherit;
+		}
+
+		.hamburger {
+			$hamburger-width: 50px;
+			$hamburger-height: 28px;
+			padding: 0;
+
+			.hamburger-box {
+				width: $hamburger-width;
+				height: $hamburger-height;
+
+				.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+					background-color: $theme-white;
+					width: $hamburger-width;
+					height: 5px;
+					border-radius: 30px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 66rem) {
+
+		.mobile-menu {
+			display: block;
+		}
+
+		.mobile-menu.is-active {
+			position: fixed;
+			right: 20px;
+
+			.hamburger {
+				.hamburger-box {
+					.hamburger-inner {
+						background-color: $theme-orange;
+					}
+					.hamburger-inner::before {
+						background-color: $theme-orange;
+
+					}
+					.hamburger-inner::after {
+						background-color: $theme-orange;
+					}
+				}
+			}
+		}
+
+		.site-navigation {
+			position: fixed;
+			display: none;
+			top: 0;
+			left: 0;
+			z-index: 90;
+			width: 100%;
+			height: 100%;
+			justify-content: center;
+			align-items: center;
+			background: $theme-white;
+			font-size: 1.5rem;
+			line-height: 3rem;
+			color: $theme-gray;
+
+			ul {
+				max-height: 100%;
+				padding: 20px;
+				overflow-y: scroll;
+
+				li {
+					clear: both;
+					margin: 10px 0;
+
+					a {
+						padding: 4px 0 !important;	// I'd prefer to avoid !important, but it is redefined by each page's stylesheet
+					}
+				}
+
+				li.current-page a {
+					border-bottom: 1px solid $theme-orange !important;	// I'd prefer to avoid !important, but it is redefined by each page's stylesheet
+				}
+
+				li.current-page::before {
+					content: '\021D2\000A0';
+				}
+
+				li.current-page, li a:hover {
+					color: $theme-orange !important;	// I'd prefer to avoid !important, but it is redefined by each page's stylesheet
+				}
+			}
+		}
+		.site-navigation.is-active {
+			display: flex;
+		}
+	}
+}
+
+.splash {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: default;
+
+	.container {
+		max-width: calc(900px + 2 * 30px);
+		padding: 80px 30px;
+		display: flex;
+		flex-direction: column;
+
+		.big-button {
+			padding: 20px;
+			font-size: 1.5rem;
+			text-decoration: none;
+			font-weight: bold;
+			text-align: center;
+		}
+		.big-button::after {
+			content: '';
+		}
+		.big-button.dead {
+			opacity: 0.8;
+			cursor: default;
+		}
+
+		h3 {
+			font-size: 2.1rem;
+			color: black;
+		}
+		h3.pad-bottom {
+			padding-bottom: 20px;
+		}
+		h3.top-line {
+			border-top: 0.5px solid $theme-gray;
+			margin: 0 0 15px 0;
+			padding: 15px 10px 0 10px;
+			font-size: 2rem;
+		}
+
+		h4 {
+			font-size: 1.5rem;
+		}
+
+		a::after {
+			content: '\000A0\000A0\021D2';
+		}
+		sup {
+			a::after {
+				content: '';
+			}
+			a {
+				text-decoration: none;
+			}
+		}
+
+		.accompanies-top-line {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.weak {
+			font-weight: lighter;
+		}
+
+		.strong {
+			font-weight: bolder;
+		}
+
+		.fade {
+			opacity: 0.7;
+		}
+
+		.small {
+			font-size: 1rem;
+		}
+
+		.italic {
+			font-style: italic;
+		}
+
+		.dark {
+			color: black;
+		}
+
+		.mobile-only {
+			display: none;
+		}
+
+		.picture {
+			height: 250px;
+			width: 250px;
+			border-radius: 50%;
+			margin-bottom: 5px;
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.picture.outline-white {
+			border: 5px solid $theme-white;
+		}
+
+		.section {
+			width: 100%;
+			margin: 10px 0;
+
+			.row {
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				//align-items: center;
+
+				.contents, .profile, .column {
+					display: flex;
+					flex-direction: column;
+
+					.picture {
+					}
+					h5 {
+						font-size: 1.5rem;
+					}
+				}
+			}
+
+		}
+		.section.contains-expandable {
+
+			h4 {
+				padding: 0 0 10px 10px;
+				cursor: pointer;
+			}
+
+			.expandable {
+				display: flex;
+				flex-direction: column;
+
+				p {
+					padding: 0 0 0 10px;
+				}
+
+				table {
+					width: 100%;
+
+					tr {
+						th, td {
+							padding: 10px 10px;
+
+							a::after {
+								content: '\000A0\000A0\021D2';
+							}
+
+							a:hover {
+								color: $theme-orange;
+							}
+						}
+
+						th {
+							font-weight: 800;
+						}
+
+						td:first-child {
+							font-weight: 600;
+						}
+					}
+				}
+			}
+			@media screen and (max-width: 56rem) {
+				.expandable {
+					width: 100%;
+					align-content: center;
+					align-items: center;
+
+					table {
+						width: auto;
+						border: 0;
+
+						tr {
+
+							th {
+								border: 0;
+							}
+							td {
+								display: block;
+							}
+							td:first-child {
+								border-top: 3px solid $theme-orange;
+								margin-top: 15px;
+								color: $theme-orange;
+								font-weight: 600;
+							}
+						}
+						tr.hide {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+
+		.section.contains-expandable.collapsed {
+			h4::after {
+				content: '\000A0\025B8';
+			}
+			.expandable {
+				display: none;
+			}
+		}
+		.section.contains-expandable.collapsed > h4:hover {
+			color: $theme-orange;
+		}
+		.section.contains-expandable:not(.collapsed) {
+			h4 {
+				color: $theme-orange;
+			}
+			h4::after {
+				content: '\000A0\025BE';
+			}
+		}
+	}
+
+	.center-contents {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	*.align-center {
+		align-self: center;
+	}
+
+	*.align-start {
+		align-self: flex-start;
+	}
+
+	.container.fill {
+		width: 100%;
+	}
+
+	.container.wide {
+		max-width: 100%;
+	}
+}
+
+
+@media screen and (orientation: portrait) {
+	.splash.full-height-portrait {
+		min-height: 100%;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	.splash.full-height-landscape {
+		min-height: 100%;
+	}
+}
+
+.splash.full-height {
+	min-height: 100%;
+}
+
+.splash.page-title {
+	margin-top: $header-height;
+
+	.container {
+		align-items: flex-start;
+		max-width: 1200px;
+
+		.background, .background.orange {
+			background: $theme-orange;
+			padding: 15px;
+		}
+
+		.background.white {
+			background: $theme-white;
+		}
+
+		.background.gray {
+			background: $theme-gray;
+
+			h1, h2 {
+				color: $theme-orange;
+			}
+		}
+
+		.background.blue {
+			background: $theme-blue;
+		}
+
+		h1 {
+			margin: 0 0 10px 0;
+			font-size: 4.4rem;
+			font-weight: 800;
+			color: black;
+		}
+		h2 {
+			font-size: 1.8rem;
+			font-weight: 300;
+			font-style: italic;
+			color: $theme-gray;
+		}
+	}
+
+}
+
+.splash.blue {
+	background: $theme-blue;
+
+	a:hover {
+		color: $theme-white;
+	}
+
+	.container .big-button {
+		border: 3px solid $theme-white;
+		color: $theme-white;
+		background: $theme-blue;
+	}
+	.container .big-button:not(.dead):hover {
+		color: $theme-blue;
+		background: $theme-white;
+	}
+}
+
+.splash.orange {
+	background: $theme-orange;
+
+	a:hover {
+		color: $theme-white;
+	}
+
+	.container .big-button {
+		border: 3px solid $theme-white;
+		color: $theme-white;
+		background: $theme-orange;
+	}
+	.container .big-button:not(.dead):hover {
+		color: $theme-orange;
+		background: $theme-white;
+	}
+}
+
+.splash.white {
+	background: $theme-white;
+
+	a:hover {
+		color: $theme-orange;
+	}
+
+	.container .big-button {
+		border: 3px solid $theme-orange;
+		color: $theme-orange;
+		background: $theme-white;
+	}
+	.container .big-button:not(.dead):hover {
+		color: $theme-white;
+		background: $theme-orange;
+	}
+}
+
+.splash.gray {
+	background: $theme-gray;
+
+	p, h1, h2, h3, h4 {
+		color: $theme-white;
+	}
+	a:hover {
+		color: $theme-orange;
+	}
+
+	.container .big-button {
+		border: 3px solid $theme-orange;
+		color: $theme-orange;
+		background: $theme-gray;
+	}
+	.container .big-button:not(.dead):hover {
+		color: $theme-gray;
+		background: $theme-orange;
+	}
+}
+
+.splash.white-text {
+	color: $theme-white;
+}
+
+.splash.location-image, .splash.image {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+@media screen and (orientation: portrait) {
+	.splash.location-image, .splash.image {
+		height: 40%;
+	}
+
+	.splash.image.page-title {
+		background-image: none !important;
+		height: unset;
+
+		.container .background {
+			background: rgba(0, 0, 0, 0);
+		}
+	}
+}
+
+@media screen and (orientation: landscape) {
+	.splash.location-image, .splash.image {
+		min-height: 80%;
+	}
+}
+
+.splash.image.sticky {
+	background-attachment: fixed;
+}
+

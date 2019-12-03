@@ -1,0 +1,35 @@
+@import "base";
+
+.splash.page-title {
+	background-attachment: fixed;
+
+	h1 {
+		@media screen and (max-width: 28rem) {
+			.desktop-only {
+				display: none;
+			}
+			.mobile-only {
+				display: inline;
+			}
+		}
+	}
+}
+
+#schedule {
+	.container {
+
+		p {
+			margin: 10px 0;
+			//font-weight: 500;
+			line-height: 1.9rem;
+		}
+		ul {
+			font-weight: 500;
+			font-size: 1.1rem;
+			text-align: center;
+			line-height: 1.9rem;
+			padding: 0;
+			list-style: none;
+		}
+	}
+}

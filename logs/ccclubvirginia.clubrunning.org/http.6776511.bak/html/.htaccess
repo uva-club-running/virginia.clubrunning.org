@@ -1,0 +1,4 @@
+AuthType Basic
+AuthUserFile /home/virgrun/logs/ccclubvirginia.clubrunning.org/http.6776511/html/.htpasswd
+AuthName "Statistics Area"
+require valid-user

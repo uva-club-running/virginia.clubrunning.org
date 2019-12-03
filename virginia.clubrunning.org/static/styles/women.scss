@@ -1,0 +1,75 @@
+@import "base";
+
+.splash {
+	.container {
+		h4 {
+			padding-top: 15px;
+		}
+	}
+}
+
+#workouts {
+
+	.container {
+		h4 {
+			padding-bottom: 15px;   // intended to center h4 evenly between paragraph above and table below
+		}
+
+		table {
+			text-align: left;
+			border-collapse: collapse;
+			font-size: calc(0.85 * 1.15rem);
+			line-height: calc(0.85 * 2.5rem);
+
+			tr {
+
+				td:first-child {
+					font-weight: bold;
+				}
+				td, th {
+					border-bottom: 0.5px solid $theme-gray;
+					padding: 5px 25px;
+					vertical-align: top;
+
+					span {
+						display: none;
+					}
+				}
+			}
+		}
+
+		@media screen and (max-width: 48rem) {
+			table {
+				width: 100%;
+				border: 0;
+
+				tr {
+
+					th {
+						border: 0;
+					}
+					td {
+						display: block;
+
+						span {
+							display: inline;
+							font-weight: bold;
+						}
+					}
+					td, th {
+						border-bottom: 0;
+					}
+					td:first-child {
+						border-top: 3px solid $theme-orange;
+						margin-top: 15px;
+						color: $theme-orange;
+						font-weight: 600;
+					}
+				}
+				tr:first-child {
+					display: none;
+				}
+			}
+		}
+	}
+}

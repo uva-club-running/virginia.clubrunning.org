@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cavalier Invitational &vert; Club Running at UVA</title>
+		<link rel="stylesheet" href="static/styles/invitational.css">
+
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8d53">
+		<meta name="msapplication-TileColor" content="#ff8d53">
+		<meta name="theme-color" content="#70b9ee">
+	</head>
+	<body>
+		<div id="header">
+			<a href="." class="site-title">
+				<div class="container">
+					<div class="logo"></div>
+					<h1>Club Running</h1>
+				</div>
+			</a>
+			<div class="site-navigation">
+				<ul>
+					<li><a href=".">about</a></li>
+					<li><a href="meets">meets</a></li>
+					<li class="current-page"><a>Cav Invite</a></li>
+					<li><a href="runathon">Run-a-thon</a></li>
+					<li><a href="men">men</a></li>
+					<li><a href="women">women</a></li>
+					<li><a href="records">records</a></li>
+					<li><a href="charlottesville">Charlottesville</a></li>
+					<li><a href="contact">contact us</a></li>
+				</ul>
+			</div>
+			<div class="mobile-menu" onclick="toggleMobileNavigation()">
+				<div class="hamburger hamburger--collapse">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="splash page-title image" style="background-image: url('static/images/splash/invitational/0037.jpeg')">
+			<div class="container fill">
+				<div class="background blue">
+					<h1>Cavalier <span class="desktop-only">Invitational</span><span class="mobile-only">Invite</span></h1>
+					<h2>Race with the Hoos.</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="splash orange" id="register">
+			<div class="container fill">
+				<p><span class="strong">meet date</span> October 19</p>
+				<p><span class="strong">start time</span> women&rsquo;s race 10am, men&rsquo;s race 11am</p>
+				<p><span class="strong">location</span> Panorama Farms near Charlottesville, Virginia</p>
+			</div>
+		</div>
+
+		<div class="splash white" id="schedule">
+			<div class="container">
+				<p>The 2019 Cavalier Invitational featured over 300 runners from 14 teams, making it one of the biggest club meets in the country. We had FAT timing and an NCAA Division 1 caliber track, while also keeping it fun with the 4x400 coed relay, which featured a variety of unorthodox batons.</p>
+				<p>We hope to see you all this fall at the 2019 Cavalier Cross Country Invitational on October 19, which takes place at Panorama Farms near Charlottesville.</p>
+			</div>
+		</div>
+
+		<div class="splash blue">
+			<div class="container">
+				<a class="big-button" href="results.pdf" target="_blank">spring track results</a>
+			</div>
+		</div>
+
+		<div class="splash gray">
+			<div class="container fill">
+				<p>Questions? <a href="http://virginia.clubrunning.org/contact#meet-coordinators">Email our Meet Coordinators</a></p>
+			</div>
+		</div>
+
+		<!--<div class="splash image half" style="background-image: url('static/images/locations/track.jpg')"></div>-->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+            let version = (new Date()).getTime();
+            let script = document.createElement("script");
+            script.src = "static/scripts/app.js?v=" + version;
+            document.body.appendChild(script);
+		</script>
+	</body>
+</html>

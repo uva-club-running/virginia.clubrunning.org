@@ -1,0 +1,57 @@
+@import "base";
+
+#schedule {
+	.container {
+		table {
+			font-size: 1.1rem;
+			text-align: left;
+			border-collapse: collapse;
+			tr {
+				th, td {
+					padding: 10px 10px;
+				}
+				th {
+					font-weight: 800;
+				}
+				td:first-child {
+					font-weight: 600;
+				}
+			}
+			tr:first-child {
+				background: $theme-white;
+				font-size: 1.25rem;
+			}
+			tr.fade {
+				opacity: 0.5;
+			}
+		}
+		@media screen and (max-width: 38rem) {
+			table {
+				width: 100%;
+				border: 0;
+				tr {
+
+					th {
+						border: 0;
+					}
+					td {
+						display: block;
+					}
+					td:first-child {
+						border-top: 3px solid $theme-white;
+						margin-top: 15px;
+						color: $theme-white;
+						font-weight: 600;
+					}
+				}
+				tr:first-child {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.splash .container p#register {
+	font-weight: bold;
+}

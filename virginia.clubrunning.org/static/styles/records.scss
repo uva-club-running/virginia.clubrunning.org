@@ -1,0 +1,62 @@
+@import "base";
+
+.splash {
+	.container {
+		.section {
+			.row {
+				margin-bottom: 15px;
+
+				.column {
+					width: 280px;
+					margin-bottom: 5px;
+					h4 {
+						margin-bottom: 5px;
+					}
+					p {
+						line-height: 1.8rem;
+						margin-bottom: 5px;
+					}
+					p:nth-of-type(1) {
+						font-style: italic;
+					}
+				}
+				.column.full {
+					width: 440px;
+				}
+				.column:first-child {
+					margin-right: 20px;
+				}
+				.column:last-child {
+					margin-left: 20px;
+				}
+			}
+			@media screen and (max-width: 44rem) {
+				.row {
+					flex-direction: column;
+
+					.column {
+						margin-bottom: 0;
+					}
+					.column.full {
+						width: 100%;
+					}
+					.column:first-child {
+						margin-right: 0;
+					}
+					.column:last-child {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+		#all-americans {
+			.row {
+				.column {
+					p:nth-of-type(1) {
+						font-style: normal;
+					}
+				}
+			}
+		}
+	}
+}

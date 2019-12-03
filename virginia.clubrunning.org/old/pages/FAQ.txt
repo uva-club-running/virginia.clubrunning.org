@@ -1,0 +1,67 @@
+		  <!--<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+
+			  <!-- Modal content-->
+			  <!--<div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">FAQ For New Runners</h4>
+				</div>
+				<div class="modal-body">
+				  <p>Welcome to the Virginia Club Running homepage! Here you will find basic information about us, information on training, records, running locations, and contact information. If you are new to the team, here are answers to some questions you may have.</p>
+
+				  <p><b>Q: What is Virginia Club Running all about?</b>
+				  <br>A: Virginia Club Running is a UVA CIO, with the goal of allowing non-varsity college runners to train and compete at a high level. More broadly, we are a group which supports and promotes all things running-related, at UVA and in the Charlottesville area.</p>
+
+				  <p><b>Q: Who is Virginia Club Running for?</b>
+				  <br>A:  Virginia Club Running is for any UVA undergraduate or graduate student (full or part time) with an interest or passion for running. One of our primary objectives is to compete with other club running teams via race opportunities throughout the year. However, Virginia Club Running is not just for competitive runners. We welcome runners of all backgrounds, whether you are running for other races, fitness, socializing, other sports, and even (slightly begrudgingly) triathlon training. We have runners of all fitness and speed capabilities, so don't let a fear of fast runners keep you from joining us! (Though we do keep a handful of them in stock).</p>
+
+				  <p><b>Q: What kind of training opportunities does Virginia Club Running offer?</b>
+				  <br>A:  The club team meets 6 days a week, giving runners the opportunity to train with individuals of similar athletic capability. We have a men's and women's workout coordinator, whose job is to plan runs and a training schedule for the runners. These schedules tend to be focused towards preparing runners for competition, but there are always runners around who are just looking to get in a few easy miles.</p>
+
+				  <p><b>Q: When does practice happen?</b>
+				  <br>A: The club team meets Monday through Thursday at 5PM during daylight savings time and 4PM after daylight savings time ends. On Saturdays and Sundays we usually meet in the mornings, but the exact time and location is determined on a week by week basis. Fridays are "off" days, though we often meet informally for cross training, easy runs, or "Frolicsome Fridays" (see below)</p>
+
+				  <p><b>Q: Where do we meet for practice?</b>
+				  <br>A: Monday through Thursday, we meet at Nameless Field <a href = "pics/index/nameless_location.gif" target="_blank">(see number 28 on this map)</a> under the Lady of Astor Tennis Pavilion. On non-meet weekends, Saturday practices usually take place at Nameless or the track. Sundays are long run days, and we often carpool to other locations. Join the listserve for week by week information.</p>
+
+				  <p><b>Q: So how does racing work?</b>
+				  <br>A: Virginia Club Running is actually made of two organizations. We are Virginia Club Cross Country in the fall, and Virginia Club Track and Field in the spring.</p>
+
+				  <p>In the fall, our training and racing is focused towards the NIRCA championship series. All runners can participate in any meet, regardless of speed or talent level.
+				  <br>
+				  In the spring, we focus on track running. We participate in NIRCA sanctioned club meets, as well as some division 3 NCAA meets based on availability.
+				  <br>
+				  We also have a contingency of runners in the spring who race road-races along with/instead of track. Charlottesville and the state of Virginia have a lot of great road-races; ask some older members about their favorites.</p>
+
+				  <p><b>Q: Are practices or races mandetory?</b>
+				  <br>A: Absolutely not! We want to encourage runners to meet their goals, whatever they may be. Come and go as you please- after all, we are club, not varsity (which has its perks). In particular, academics at UVA can be quite demanding at times, and many runners will have class during practice once or twice a week.</p>
+
+				  <p><b>Q: What distances do we run?</b>
+				  <br>A: During cross country, NIRCA races (including Regional and Nationals) are predominantly 6 kilometers for women and 8 kilometers for men. There are a few exceptions, as the first race of this season is a 5 kilometer race for men and women. Track events tend to go by the NCAA standards (similar to Olympic Standards).</p>
+
+				  <p><b>Q: You all sure have a lot of officers... do you hold those positions for life?</b>
+				  <br>A: Sadly, no. At the end of each fall  (usually a week after Nationals), we have our annual elections. Any contributing member of the team is welcome to run for any position.</p>
+
+				  <p><b>Q: I love the sound of this club! How do I get involved?</b>
+				  <br>A: Easy- come to practice! Other things to do include join our listserve (email cwc2at@virginia.edu), join our Facebook group (UVA Club Cross Country), and follow us on Twitter (@UVaClubXC).</p>
+
+				  <p><b>Q: What costs are involved?</b>
+				  <br>A: Besides your time (which will be well-spent, guarenteed), there are team dues, and racing dues (only if you plan on racing). Racers will want to purchase a uniform as well. Additionally, we always have optional but awesome t-shirts, jackets, etc.</p>
+
+				  <p><b>Q: Do you people only run? Don't you get bored?</b>
+				  <br>A: Even the amazing sport of running can't constitute all our non-academic time. We are a lot more than just an Running Club. We regularly hang out informally and formally when not running. Regular activities include post-practice dinner/brunch, Frolicsome Fridays (a different non-running sport most Friday afternoons), and pre-race pasta dinners. We also have other social events such as apple picking, camping, semi-formals, and various classy social evening events on the weekends.</p>
+
+				  <p><b>Q: I have more questions, what should I do?</b>
+				  <br>A: You can hit thay "x" at the top of the page, and look around the site more. <a href="contactus.html">Email our recruitment chairs Ilana and Brandon</a>, and check us out on Facebook and Twitter. But the easiest way is to come to practice and ask any smiling face!</p>
+
+				  <p><b>Q: I've noticed you have a hunky president with gorgeous hair named Chris... I'm entranced, but I don't know where to start. Help?!?!</b>
+				  <br>A: Chris is a fine young gentleman who enjoys Bodos brunches, long walks on the beach (volleyball courts will do), listening to the romantic screeches of Howler Monkeys on the Lawn, and being greeted by the interested individual performing "The Carlton" dance near him in very public places. Don't be shy!</p>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+
+			</div>
+		  </div>-->

@@ -1,0 +1,499 @@
+<html>
+    <head>
+        
+        <link rel="shortcut icon" href="../images/clublogofavicon.ico" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--CSS-->
+        <link href = "../css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "../css/bootstrap.css" rel = "stylesheet">
+        <link href = "../css/bootstrap-theme.min.css" rel = "stylesheet">
+		
+
+        <title>Individual Records</title>
+
+        <!--Scripts-->
+        <script type = "text/javascript" src = "../javascripts/jquery-2.0.3.min.js"></script>
+        <script src = "../javascripts/bootstrap.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>	
+
+		<!--Data-->
+		<script src = "../data/records.js"></script>
+
+    </head>
+
+    <body ng-app="RecordsApp">
+        <style>
+            #navbar_filler{
+                 height: 50px;   
+                }    
+        </style>
+
+		<!-- Navbar -->
+		<div class = "navbar navbar-default navbar-static-top" id = "main_nav">
+			<div class = "container">
+				<a href = "../index.html" class = "navbar-brand"><img src = "../images/clublogo.png" alt = "Running Club at UVA" style = "width: 40px;
+				position: relative;
+				top: -10px;"></a>
+				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button>
+				<div class = "collapse navbar-collapse navHeaderCollapse">
+					<ul class = "nav navbar-nav navbar-right">
+						<li><a href = "../index.html">Home</a> </li>
+						<li class = "dropdown">
+							<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Workouts<b class = "caret"></b></a>
+							<ul class = "dropdown-menu">
+								<li><a href="../pages/mensworkouts.html">Men's Workouts</a></li>
+								<li><a href="../pages/womensworkouts.html">Women's Workouts</a></li>
+							</ul>
+						</li>
+						<li class = "dropdown active">
+							<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Results<b class = "caret"></b></a>
+							<ul class = "dropdown-menu">
+								<li><a href="../pages/results.html">Meet Results</a></li>
+								<li><a href="../pages/records.html">Individual Records</a></li>
+							</ul>
+						</li>
+						<!--<li><a href="results.html">Results</a></li>-->
+						<li><a href="../pages/runCville.html">Running in C-Ville</a></li>
+						<li><a href="../pages/FiveK.html">Girls On the Run 5k</a></li>
+						<li><a href="../pages/payment.html">Payment</a></li>
+						<li><a href="../pages/contactus.html">Contact Us</a></li> 
+					</ul>
+				</div>
+			</div>
+		</div>
+          
+		<!--Navbar Filler-->
+		<div id = "navbar_filler"></div>  
+
+		<!--Jumbotron-->            
+		<div class="jumbotron">
+			<h1>Records</h1>
+			<p>Hoos 'gonna give it to ya</p>
+			</div>
+
+		<!--Results-->
+		
+		<div class="container">
+		
+			<!--Cross Country-->
+			<div class="row featurette">
+				<h2 class="featurette-heading">Cross Country
+				</h2>
+			</div>
+			<hr class = "feature-divider">
+			<div class="row" ng-controller="XCController">
+				<div class="col-md-5">
+					<ul class = "list-group">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="women6k=!women6k" style = "cursor:pointer">Women's 6k</div>
+						<div class="row list-group-item" ng-if="women6k" ng-repeat="sixKRunner in sixKRunners">
+							<div class="col-md-4" value="Name">{{sixKRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{sixKRunner.time}}</div>
+							<div class="col-md-4" value="Year">{{sixKRunner.year}}</div>
+						</div>	
+					</ul>
+				</div>
+
+				<div class="col-md-5 col-md-offset-2">
+					<ul class = "list-group ">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="men8k=!men8k" style = "cursor:pointer">Men's 8k</div>						
+						<div class="row list-group-item" ng-if="men8k" ng-repeat="eightKRunner in eightKRunners">
+							<div class="col-md-4" value="Name">{{eightKRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{eightKRunner.time}}</div> 
+							<div class="col-md-4" value="Year">{{eightKRunner.year}}</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			
+			<!--Track & Field-->
+			<div class="row featurette">
+				<h2 class="featurette-heading">Track & Field
+				</h2>
+			</div>
+
+			<hr class = "feature-divider">
+			
+			<!--200-->
+			<div class="row" ng-controller="TrackController">
+				<div class="col-md-5">
+					<ul class = "list-group">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="women200=!women200" style = "cursor:pointer">Women's 200m</div>
+						<div class="row list-group-item" ng-if="women200" ng-repeat="twoHundredFemaleRunner in twoHundredFemaleRunners">
+							<div class="col-md-4" value="Name">{{twoHundredFemaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{twoHundredFemaleRunner.time}}</div>
+							<div class="col-md-4" value="Year">{{twoHundredFemaleRunner.year}}</div>
+						</div>	
+					</ul>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<ul class = "list-group ">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="men200=!men200" style = "cursor:pointer">Men's 200m</div>						
+						<div class="row list-group-item" ng-if="men200" ng-repeat="twoHundredMaleRunner in twoHundredMaleRunners">
+							<div class="col-md-4" value="Name">{{twoHundredMaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{twoHundredMaleRunner.time}}</div> 
+							<div class="col-md-4" value="Year">{{twoHundredMaleRunner.year}}</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<!--400-->
+			<div class="row" ng-controller="TrackController">
+				<div class="col-md-5">
+					<ul class = "list-group">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="women400=!women400" style = "cursor:pointer">Women's 400m</div>
+						<div class="row list-group-item" ng-if="women400" ng-repeat="fourHundredFemaleRunner in fourHundredFemaleRunners">
+							<div class="col-md-4" value="Name">{{fourHundredFemaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{fourHundredFemaleRunner.time}}</div>
+							<div class="col-md-4" value="Year">{{fourHundredFemaleRunner.year}}</div>
+						</div>	
+					</ul>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<ul class = "list-group ">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="men400=!men400" style = "cursor:pointer">Men's 400m</div>						
+						<div class="row list-group-item" ng-if="men400" ng-repeat="fourHundredMaleRunner in fourHundredMaleRunners">
+							<div class="col-md-4" value="Name">{{fourHundredMaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{fourHundredMaleRunner.time}}</div> 
+							<div class="col-md-4" value="Year">{{fourHundredMaleRunner.year}}</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<!--4x400-->
+			<div class="row" ng-controller="TrackController">
+				<div class="col-md-5">
+					<ul class = "list-group">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="women4x400=!women4x400" style = "cursor:pointer">Women's 4 x 400m</div>
+						<div class="row list-group-item" ng-if="women4x400" ng-repeat="fourbyfourFemaleRunner in fourbyfourFemaleRunners">
+							<div class="col-md-4" value="Name">{{fourbyfourFemaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{fourbyfourFemaleRunner.time}}</div>
+							<div class="col-md-4" value="Year">{{fourbyfourFemaleRunner.year}}</div>
+						</div>	
+					</ul>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<ul class = "list-group ">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="men4x400=!men4x400" style = "cursor:pointer">Men's 4 x 400m</div>						
+						<div class="row list-group-item" ng-if="men4x400" ng-repeat="fourbyfourMaleRunner in fourbyfourMaleRunners">
+							<div class="col-md-4" value="Name">{{fourbyfourMaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{fourbyfourMaleRunner.time}}</div> 
+							<div class="col-md-4" value="Year">{{fourbyfourMaleRunner.year}}</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<!--800-->
+			<div class="row" ng-controller="TrackController">
+				<div class="col-md-5">
+					<ul class = "list-group">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="women800=!women800" style = "cursor:pointer">Women's 800m</div>
+						<div class="row list-group-item" ng-if="women800" ng-repeat="eightHundredFemaleRunner in eightHundredFemaleRunners">
+							<div class="col-md-4" value="Name">{{eightHundredFemaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{eightHundredFemaleRunner.time}}</div>
+							<div class="col-md-4" value="Year">{{eightHundredFemaleRunner.year}}</div>
+						</div>	
+					</ul>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<ul class = "list-group ">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="men800=!men800" style = "cursor:pointer">Men's 800m</div>						
+						<div class="row list-group-item" ng-if="men800" ng-repeat="eightHundredMaleRunner in eightHundredMaleRunners">
+							<div class="col-md-4" value="Name">{{eightHundredMaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{eightHundredMaleRunner.time}}</div> 
+							<div class="col-md-4" value="Year">{{eightHundredMaleRunner.year}}</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<!--4x800-->
+			<div class="row" ng-controller="TrackController">
+				<div class="col-md-5">
+					<ul class = "list-group">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="women4x800=!women4x800" style = "cursor:pointer">Women's 4 x 800m</div>
+						<div class="row list-group-item" ng-if="women4x800" ng-repeat="fourbyeightFemaleRunner in fourbyeightFemaleRunners">
+							<div class="col-md-4" value="Name">{{fourbyeightFemaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{fourbyeightFemaleRunner.time}}</div>
+							<div class="col-md-4" value="Year">{{fourbyeightFemaleRunner.year}}</div>
+						</div>	
+					</ul>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<ul class = "list-group ">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="men4x800=!men4x800" style = "cursor:pointer">Men's 4 x 800m</div>						
+						<div class="row list-group-item" ng-if="men4x800" ng-repeat="fourbyeightMaleRunner in fourbyeightMaleRunners">
+							<div class="col-md-4" value="Name">{{fourbyeightMaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{fourbyeightMaleRunner.time}}</div> 
+							<div class="col-md-4" value="Year">{{fourbyeightMaleRunner.year}}</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<!--DMR-->
+			<div class="row" ng-controller="TrackController">
+				<div class="col-md-5">
+					<ul class = "list-group">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="womenDMR=!womenDMR" style = "cursor:pointer">Women's DMR</div>
+						<div class="row list-group-item" ng-if="womenDMR" ng-repeat="dmrFemaleRunner in dmrFemaleRunners">
+							<div class="col-md-4" value="Name">{{dmrFemaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{dmrFemaleRunner.time}}</div>
+							<div class="col-md-4" value="Year">{{dmrFemaleRunner.year}}</div>
+						</div>	
+					</ul>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<ul class = "list-group ">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="menDMR=!menDMR" style = "cursor:pointer">Men's DMR</div>						
+						<div class="row list-group-item" ng-if="menDMR" ng-repeat="dmrMaleRunner in dmrMaleRunners">
+							<div class="col-md-4" value="Name">{{dmrMaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{dmrMaleRunner.time}}</div> 
+							<div class="col-md-4" value="Year">{{dmrMaleRunner.year}}</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<!--1500-->
+			<div class="row" ng-controller="TrackController">
+				<div class="col-md-5">
+					<ul class = "list-group">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="women1500=!women1500" style = "cursor:pointer">Women's 1500m</div>
+						<div class="row list-group-item" ng-if="women1500" ng-repeat="fifteenHundredFemaleRunner in fifteenHundredFemaleRunners">
+							<div class="col-md-4" value="Name">{{fifteenHundredFemaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{fifteenHundredFemaleRunner.time}}</div>
+							<div class="col-md-4" value="Year">{{fifteenHundredFemaleRunner.year}}</div>
+						</div>	
+					</ul>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<ul class = "list-group ">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="men1500=!men1500" style = "cursor:pointer">Men's 1500m</div>						
+						<div class="row list-group-item" ng-if="men1500" ng-repeat="fifteenHundredMaleRunner in fifteenHundredMaleRunners">
+							<div class="col-md-4" value="Name">{{fifteenHundredMaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{fifteenHundredMaleRunner.time}}</div> 
+							<div class="col-md-4" value="Year">{{fifteenHundredMaleRunner.year}}</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<!--3000-->
+			<div class="row" ng-controller="TrackController">
+				<div class="col-md-5">
+					<ul class = "list-group">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="women3000=!women3000" style = "cursor:pointer">Women's 3000m</div>
+						<div class="row list-group-item" ng-if="women3000" ng-repeat="threeKFemaleRunner in threeKFemaleRunners">
+							<div class="col-md-4" value="Name">{{threeKFemaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{threeKFemaleRunner.time}}</div>
+							<div class="col-md-4" value="Year">{{threeKFemaleRunner.year}}</div>
+						</div>	
+					</ul>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<ul class = "list-group ">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="men3000=!men3000" style = "cursor:pointer">Men's 3000m</div>						
+						<div class="row list-group-item" ng-if="men3000" ng-repeat="threeKMaleRunner in threeKMaleRunners">
+							<div class="col-md-4" value="Name">{{threeKMaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{threeKMaleRunner.time}}</div> 
+							<div class="col-md-4" value="Year">{{threeKMaleRunner.year}}</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<!--5000-->
+			<div class="row" ng-controller="TrackController">
+				<div class="col-md-5">
+					<ul class = "list-group">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="women5000=!women5000" style = "cursor:pointer">Women's 5000m</div>
+						<div class="row list-group-item" ng-if="women5000" ng-repeat="fiveKFemaleRunner in fiveKFemaleRunners">
+							<div class="col-md-4" value="Name">{{fiveKFemaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{fiveKFemaleRunner.time}}</div>
+							<div class="col-md-4" value="Year">{{fiveKFemaleRunner.year}}</div>
+						</div>	
+					</ul>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<ul class = "list-group ">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="men5000=!men5000" style = "cursor:pointer">Men's 5000m</div>						
+						<div class="row list-group-item" ng-if="men5000" ng-repeat="fiveKMaleRunner in fiveKMaleRunners">
+							<div class="col-md-4" value="Name">{{fiveKMaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{fiveKMaleRunner.time}}</div> 
+							<div class="col-md-4" value="Year">{{fiveKMaleRunner.year}}</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			
+			<!--Road Races-->
+			<div class="row featurette">
+				<h2 class="featurette-heading">Road Races
+				</h2>
+			</div>
+			
+			<!--10K-->
+			<div class="row" ng-controller="RoadController">
+				<div class="col-md-5">
+					<ul class = "list-group">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="women10k=!women10k" style = "cursor:pointer">Women's 10k</div>
+						<div class="row list-group-item" ng-if="women10k" ng-repeat="tenKFemaleRunner in tenKFemaleRunners">
+							<div class="col-md-4" value="Name">{{tenKFemaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{tenKFemaleRunner.time}}</div>
+							<div class="col-md-4" value="Year">{{tenKFemaleRunner.year}}</div>
+						</div>	
+					</ul>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<ul class = "list-group ">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="men10k=!men10k" style = "cursor:pointer">Men's 10k</div>						
+						<div class="row list-group-item" ng-if="men10k" ng-repeat="tenKMaleRunner in tenKMaleRunners">
+							<div class="col-md-4" value="Name">{{tenKMaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{tenKMaleRunner.time}}</div> 
+							<div class="col-md-4" value="Year">{{tenKMaleRunner.year}}</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<!--10 Miler-->
+			<div class="row" ng-controller="RoadController">
+				<div class="col-md-5">
+					<ul class = "list-group">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="women10Mile=!women10Mile" style = "cursor:pointer">Women's 10 Miler</div>
+						<div class="row list-group-item" ng-if="women10Mile" ng-repeat="tenMileFemaleRunner in tenMileFemaleRunners">
+							<div class="col-md-4" value="Name">{{tenMileFemaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{tenMileFemaleRunner.time}}</div>
+							<div class="col-md-4" value="Year">{{tenMileFemaleRunner.year}}</div>
+						</div>	
+					</ul>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<ul class = "list-group ">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="men10Mile=!men10Mile" style = "cursor:pointer">Men's 10 Miler</div>						
+						<div class="row list-group-item" ng-if="men10Mile" ng-repeat="tenMileMaleRunner in tenMileMaleRunners">
+							<div class="col-md-4" value="Name">{{tenMileMaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{tenMileMaleRunner.time}}</div> 
+							<div class="col-md-4" value="Year">{{tenMileMaleRunner.year}}</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<!--Half Marathon-->
+			<div class="row" ng-controller="RoadController">
+				<div class="col-md-5">
+					<ul class = "list-group">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="womenHalfMarathon=!womenHalfMarathon" style = "cursor:pointer">Women's Half-Marathon</div>
+						<div class="row list-group-item" ng-if="womenHalfMarathon" ng-repeat="halfMarathonFemaleRunner in halfMarathonFemaleRunners">
+							<div class="col-md-4" value="Name">{{halfMarathonFemaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{halfMarathonFemaleRunner.time}}</div>
+							<div class="col-md-4" value="Year">{{halfMarathonFemaleRunner.year}}</div>
+						</div>	
+					</ul>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<ul class = "list-group ">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="menHalfMarathon=!menHalfMarathon" style = "cursor:pointer">Men's Half-Marathon</div>						
+						<div class="row list-group-item" ng-if="menHalfMarathon" ng-repeat="halfMarathonMaleRunner in halfMarathonMaleRunners">
+							<div class="col-md-4" value="Name">{{halfMarathonMaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{halfMarathonMaleRunner.time}}</div> 
+							<div class="col-md-4" value="Year">{{halfMarathonMaleRunner.year}}</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<!--Marathon-->
+			<div class="row" ng-controller="RoadController">
+				<div class="col-md-5">
+					<ul class = "list-group">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="womenMarathon=!womenMarathon" style = "cursor:pointer">Women's Marathon</div>
+						<div class="row list-group-item" ng-if="womenMarathon" ng-repeat="marathonFemaleRunner in marathonFemaleRunners">
+							<div class="col-md-4" value="Name">{{marathonFemaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{marathonFemaleRunner.time}}</div>
+							<div class="col-md-4" value="Year">{{marathonFemaleRunner.year}}</div>
+						</div>	
+					</ul>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<ul class = "list-group ">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="menMarathon=!menMarathon" style = "cursor:pointer">Men's Marathon</div>						
+						<div class="row list-group-item" ng-if="menMarathon" ng-repeat="marathonMaleRunner in marathonMaleRunners">
+							<div class="col-md-4" value="Name">{{marathonMaleRunner.name}}</div>
+							<div class="col-md-4" value="Time">{{marathonMaleRunner.time}}</div> 
+							<div class="col-md-4" value="Year">{{marathonMaleRunner.year}}</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			
+			<!--UVA Miles-->
+			<div class="row featurette">
+				<h2 class="featurette-heading">Good Ol' Miles
+				</h2>
+			</div>
+			<hr class = "feature-divider">
+			<div class="row" ng-controller="MiscController">
+				<div class="col-md-5">
+					<ul class = "list-group">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="women6k=!women6k" style = "cursor:pointer">Lady's Mile</div>
+						<div class="row list-group-item" ng-if="women6k" ng-repeat="LadysMiler in LadysMilers">
+							<div class="col-md-4" value="Name">{{LadysMiler.name}}</div>
+							<div class="col-md-4" value="Time">{{LadysMiler.time}}</div>
+							<div class="col-md-4" value="Year">{{LadysMiler.year}}</div>
+						</div>	
+					</ul>
+				</div>
+				<div class="col-md-5 col-md-offset-2">
+					<ul class = "list-group ">
+						<div class = "row list-group-item list-group-item-info" 
+						ng-click="men8k=!men8k" style = "cursor:pointer">Gentleman's Mile</div>						
+						<div class="row list-group-item" ng-if="men8k" ng-repeat="GentsMiler in GentsMilers">
+							<div class="col-md-4" value="Name">{{GentsMiler.name}}</div>
+							<div class="col-md-4" value="Time">{{GentsMiler.time}}</div> 
+							<div class="col-md-4" value="Year">{{GentsMiler.year}}</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+       
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-37297447-1', 'clubrunning.org');
+			ga('send', 'pageview');
+		</script>
+    </body>
+</html>

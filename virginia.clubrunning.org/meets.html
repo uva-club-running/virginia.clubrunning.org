@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Meets &vert; Club Running at UVA</title>
+
+		<link rel="stylesheet" href="static/styles/meets.css">
+
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8d53">
+		<meta name="msapplication-TileColor" content="#ff8d53">
+		<meta name="theme-color" content="#70b9ee">
+	</head>
+	<body>
+		<div id="header">
+			<a href="." class="site-title">
+				<div class="container">
+					<div class="logo"></div>
+					<h1>Club Running</h1>
+				</div>
+			</a>
+			<div class="site-navigation">
+				<ul>
+					<li><a href=".">about</a></li>
+					<li class="current-page"><a>meets</a></li>
+					<li><a href="invitational">Cav Invite</a></li>
+					<li><a href="runathon">Run-a-thon</a></li>
+					<li><a href="men">men</a></li>
+					<li><a href="women">women</a></li>
+					<li><a href="records">records</a></li>
+					<li><a href="charlottesville">Charlottesville</a></li>
+					<li><a href="contact">contact us</a></li>
+				</ul>
+			</div>
+			<div class="mobile-menu" onclick="toggleMobileNavigation()">
+				<div class="hamburger hamburger--collapse">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="splash page-title image" style="background-image: url('static/images/splash/meets/1.jpg');">
+			<div class="container fill">
+				<div class="background">
+					<h1>Meets</h1>
+					<h2>Hoos gonna give it to ya.</h2>
+				</div>
+			</div>
+		</div>
+
+		<!--TODO : gray out past meets in current season-->
+		<!--JAVASCRIPT REQUIRED-->
+		<div class="splash orange" id="schedule">
+			<div class="container">
+				<table>
+					<tr>
+						<th>date</th>
+						<th>meet</th>
+						<th>location</th>
+					</tr>
+					<tr>
+						<td>September 14</td>
+						<td>Carolina Cross-Country Classic</td>
+						<td>University of North Carolina</td>
+					</tr>
+					<tr>
+						<td>September 22</td>
+						<td>DC Invitational</td>
+						<td>Kenilworth Park, Georgetown University</td>
+					</tr>
+					<tr>
+						<td>September 28</td>
+						<td>Charlotte McAlpine Trail Race</td>
+						<td>UNC Charlotte</td>
+					</tr>
+					<tr id="home-meet-row">
+						<td>October 19</td>
+						<td>Cavalier Invitational</td>
+						<td>Panorama Farms, University of Virginia</td>
+					</tr>
+					<tr>
+						<td>October 26</td>
+						<td>NIRCA Regionals</td>
+						<td>Utica District Park</td>
+					</tr>
+					<tr>
+						<td>November 2</td>
+						<td>Dashing Dukes Invitational</td>
+						<td>James Madison University</td>
+					</tr>
+					<tr>
+						<td>November 16</td>
+						<td>NIRCA Nationals</td>
+						<td>Pole Green Park</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="splash gray" id="home-meet">
+			<div class="container fill">
+				<h3 class="pad-bottom">Cavalier Invitational</h3>
+				<p>Want to race with the Hoos? <a href="invitational">Register for the Cavalier Invitational</a></p>
+				<!--<p>Questions? <a href="http://virginia.clubrunning.org/contact#meet-coordinators">Email our Meet Coordinators</a></p>-->
+			</div>
+		</div>
+
+		<div class="splash white" id="past-results">
+			<div class="container fill">
+				<h3 class="top-line">past results</h3>
+				<div class="section contains-expandable collapsed">
+					<h4>spring 2019</h4>
+					<div class="expandable">
+						<table>
+							<tr>
+								<td>February 3</td>
+								<td>Vince Brown Invitational</td>
+								<td>Christopher Newport University</td>
+								<td><a href="https://va.milesplit.com/meets/335409/results/626251/raw" target="_blank">results</a></td>
+							</tr>
+							<tr>
+								<td>February 10</td>
+								<td>Happy Valley Invitational</td>
+								<td>Penn State University</td>
+								<td>results not available</td>
+							</tr>
+							<tr>
+								<td>March 23</td>
+								<td>Hokie Invite</td>
+								<td>Virginia Tech</td>
+								<td><a href="http://www.snaptiming.com/meets/vtclubmeet3-23-19/" target="_blank">results</a></td>
+							</tr>
+							<tr>
+								<td>March 30</td>
+								<td>Cavalier Invitational</td>
+								<td>University of Virginia</td>
+								<td><a href="results.pdf" target="_blank">results</a></td>
+							</tr>
+							<tr>
+								<td>April 6</td>
+								<td>Terrapin Invitational</td>
+								<td>University of Maryland</td>
+								<td>NIRCA has not published results</td>
+							</tr>
+							<tr>
+								<td>April 13 &amp; 14</td>
+								<td>NIRCA Nationals</td>
+								<td>Miami University of Ohio</td>
+								<td>NIRCA has not published results</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="section contains-expandable collapsed">
+					<h4>fall 2018</h4>
+					<div class="expandable">
+						<table>
+							<tr>
+								<td>September 22</td>
+								<td>Run With The Pack</td>
+								<td>North Carolina State University</td>
+								<td><a href="https://clubrunning.org/races/race_results.php?race=663" target="_blank">results</a></td>
+							</tr>
+							<tr>
+								<td>September 29</td>
+								<td>Carolina XC Classic</td>
+								<td>University of North Carolina</td>
+								<td><a href="https://clubrunning.org/races/race_results.php?race=668" target="_blank">results</a></td>
+							</tr>
+							<tr>
+								<td>October 13</td>
+								<td>JMU Invitational</td>
+								<td>James Madison University</td>
+								<td><a href="https://clubrunning.org/races/race_results.php?race=664" target="_blank">results</a></td>
+							</tr>
+							<tr>
+								<td>October 20</td>
+								<td>NIRCA Cross Country Mid-Atlantic Regionals</td>
+								<td>Lehigh University</td>
+								<td><a href="https://clubrunning.org/races/race_results.php?race=685" target="_blank">results</a></td>
+							</tr>
+							<tr>
+								<td>October 27</td>
+								<td>Cavalier Invitational</td>
+								<td>University of Virginia</td>
+								<td><a href="https://clubrunning.org/races/race_results.php?race=690" target="_blank">results</a></td>
+							</tr>
+							<tr>
+								<td>November 10</td>
+								<td>NIRCA Cross Country Nationals</td>
+								<td>University of Kentucky</td>
+								<td><a href="https://clubrunning.org/races/race_results.php?race=641" target="_blank">results</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+            let version = (new Date()).getTime();
+            let script = document.createElement("script");
+            script.src = "static/scripts/app.js?v=" + version;
+            document.body.appendChild(script);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1490 @@
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: 80% "Trebuchet MS", Helvetica, sans-serif;
+	line-height: 1.7;
+	color: #555753; 
+    
+ background-image:url('brushed_@2X.png');
+    background-attachment:fixed;
+    margin: 0; 
+	padding: 0;
+	text-align:left;
+	
+	}
+
+
+
+p { 
+	margin-top: 0; 
+	text-align: center;
+	margin-left: 7.5px;
+	margin-right: 7.5px;
+	}
+
+
+h2{
+	font-size: 2.8em;
+	font-style: "Trebuchet MS", Helvetica, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+
+}
+h3 { 
+	font:  normal 1.4em "Trebuchet MS", Helvetica, sans-serif;
+    font-family:"Avenir Book", Avenir, Futura, Ariel, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: black;
+/*
+	background: url('CheckeredBackground.png');
+*/
+	}
+	
+table
+	{
+	border-collapse:collapse;
+	}
+
+th
+	{
+    color:white;
+    background-color: #00004C;
+    font-style: normal;
+    font-family:"Avenir Book", Avenir, Futura, Ariel, sans-serif;
+    text-align:center;
+    vertical-align: middle; ;
+	}
+
+table, th, td
+	{
+	border: 1px solid #00004C;
+	text-align:center;
+	padding: 4px;
+	}
+
+ul li table
+	{
+	margin: 30px;
+	}
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #4D4D97;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #00004C;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: none; 
+	color: #9685BA;
+	}
+a.hiddenlink:link, a.hiddenlink:visited, a.hiddenlink:hover, a.hiddenlink:focus, a.hiddenlink:active, a.hiddenlink{
+	color: #555753; 
+    font-weight:normal;
+}
+abbr {
+	border-bottom: none;
+	}
+
+hr.interdiv{
+    width: 75%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top : 5px;
+    margin-bottom: 5px;
+}
+
+/* Titles */
+
+h2{
+	font-size: 2.8em;
+	font-style: "Trebuchet MS", Helvetica, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+
+}
+h3 { 
+	font:  normal 1.4em "Trebuchet MS", Helvetica, sans-serif;
+    font-family:"Avenir Book", Avenir, Futura, Ariel, sans-serif;
+	letter-spacing: 1px; 
+    margin-top: 0;
+	margin-bottom: 0; 
+	color: black;
+	}
+	
+    h3.titletext{
+        padding: 0;
+        margin: 0;
+        background: none;
+        color: #00004C;
+        font-size: 50px;
+        font-style: normal;
+        font-family:"Avenir Book", Avenir, Futura, Ariel, sans-serif;
+        text-align:center;
+        vertical-align: middle;
+        line-height:100%; 
+        padding-top:125px;
+    }
+
+ h3.subtitletext{
+        padding: 0;
+        margin: 0;
+        background: none;
+        color: #00004C;
+        font-size: 50px;
+        font-style: normal;
+        font-family:"Avenir Book", Avenir, Futura, Ariel, sans-serif;
+        text-align:center;
+        vertical-align: middle;
+        line-height:100%; 
+        padding-top: 75px;
+    }
+
+h4 { 
+	font:  normal 1.4em "Trebuchet MS", Helvetica, sans-serif;
+    font-family:"Avenir Book", Avenir, Futura, Ariel, sans-serif;
+	letter-spacing: 1px;
+    margin-top: 0;
+	margin-bottom: 0; 
+	color: black;
+    
+
+/*
+	background: url('CheckeredBackground.png');
+*/
+	}
+
+/* Lists */
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	}
+
+ul.raceschedulelist{
+    margin-left: 10%;
+    margin-right: auto;
+    list-style-type:circle;
+}
+.imagelist{
+    display: block; 
+}
+ul.contactus{
+    margin-left: 40%;
+    margin-right: auto;
+    list-style-type:circle;
+}
+
+ul.imagelist{
+    
+}
+
+li.imagelist{
+    
+}
+li.racescheduleli{
+    text-align:left;
+}
+
+/*
+Divs
+*/
+
+    /* Title Divs */
+
+        div.pagetitle{ 
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            border-style:none;
+            background-image: url('MenPictureNoTitlex2OrangeWashed.png');
+            background-attachment:fixed;
+            background-repeat:no-repeat;
+            width: 100%;
+            height: 300px;
+            margin-left:auto;
+            margin-right:auto;
+            position:relative;
+            z-index:2;
+        }
+      div.subpagetitle{ 
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                border-style:none;
+                background-image: url('MenPictureNoTitlex2OrangeWashedShort.png');
+                background-attachment:fixed;
+                background-repeat:no-repeat;
+                width: 100%;
+                height: 200px;
+                margin-left:auto;
+                margin-right:auto;
+                position:relative;
+                z-index:2;
+            }
+        
+        div.title{
+            
+            margin-left: 2.5%;
+            margin-right:auto;
+            margin-top:20px;
+            margin-bottom:-25px;
+            color: none;
+            background: none;
+            position:static;
+            }
+        
+    /* Container Divs */
+    
+        div.container {
+            max-width: 1000;
+            min-width: 1000;
+            
+            border-style:none;
+        /*
+            border-image:url(CheckeredBackground.png) 30 30 round;
+        */
+            border-width:0px;
+            border-radius:0px;
+            border-top:none;
+            margin-left:auto;
+            margin-right:auto;
+        /*
+            min-height: 790px;
+        */
+            position:relative;
+            z-index:2;
+            }
+        
+        div.content{
+        
+            max-width: 75%;
+            min-width: 75%;
+            margin-top:20px;
+            margin-bottom: 20px;
+            text-align:center;
+
+            position:relative;
+            z-index:2;
+            }
+        div.maincontent{
+            float: left;
+                width: 50%
+
+            }
+          
+        div.mainimg{
+            float: left;
+            width: 50%;
+    
+            }
+        div.mainimglist{
+            float: left;
+            width: 50%;
+    
+            }
+        div.thirds{
+            float: left;
+            width: 33.33333%;
+        }
+        
+        div.content2{
+            background: #292fcd;
+            color: black;
+            border-style:solid;
+            border-width:5px;
+            border-radius:10px;
+            border-color:#ff6501;
+            max-width: 500px;
+            min-width: 250px;
+            margin-top:0px;
+            margin-bottom: 20px;
+            text-align:center;
+            box-shadow: 10px 10px 5px black;
+            position:relative;
+            z-index:2;
+            }
+
+       
+        
+    div.return{
+        background:none;
+        border:none;
+        color:black;
+        margin-left:0;
+        margin-right:auto;
+        }
+    
+    div.image{
+        position:static;
+        z-index:1;
+        }
+    
+    div.table1{
+        margin-right:auto;
+        margin-left:20%;
+    }
+    div.workouttablediv{
+        margin-right:auto;
+        margin-left:auto;
+    }
+    
+    div.mapimage{
+        border-style: none;
+        border-width: 5px;
+        border-color: black;
+        z-index:1;
+        margin-bottom:-300px;
+        margin-left:50%;
+        margin-right:auto;
+        position:absolute;
+        }
+        div.footer{
+        border-style: none;	
+        color: #999999;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding:5px 5px 5px 5px;
+        font-size:50%;
+        text-align: center;
+        }
+    
+
+/*
+Image layouts
+*/
+
+img.wrapr{
+    float: right;
+    margin: 0px;
+}
+img.wrapl{
+    float: left;
+    margin: 10px;
+}
+img.cenimg{
+     width:80%; /* you can use % */
+            height: auto;   
+    display: block;
+    margin: auto;
+    margin-top: 30%;
+    margin-bottom: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+
+    
+}	
+
+img.rightimg{
+    float:right;
+    margin-left: auto;
+    margin-right: -10%;
+}
+/*
+Tables
+*/
+    table
+        {
+        border-collapse:collapse;
+        }
+    
+    th
+        {
+        color:white;
+        background-color: #00004C;
+        font-style: normal;
+        font-family:"Avenir Book", Avenir, Futura, Ariel, sans-serif;
+        text-align:center;
+        vertical-align: middle; ;
+        }
+    
+    table, th, td
+        {
+        border: 1px solid #00004C;
+        text-align:center;
+        padding: 4px;
+        }
+    
+    table.workouttable{
+        margin-left:auto;
+        margin-right:auto;
+        border: 1px solid #00004C;
+        text-align:center;
+        padding: 4px;
+    }
+
+
+
+
+/* TESTING CRAP*/
+
+
+
+
+#nav
+{
+    /* container */
+}
+    #nav > a
+    {
+        display: none;
+    }
+    #nav li
+    {
+        position: relative;
+    }
+ 
+    /* first level */
+ 
+    #nav > ul
+    {
+        height: 3.75em;
+    }
+        #nav > ul > li
+        {
+            width: 25%;
+            height: 100%;
+            float: left;
+        }
+ 
+    /* second level */
+ 
+    #nav li ul
+    {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+        #nav li:hover ul
+        {
+            display: block;
+        }
+
+/*
+IDs
+*/
+
+    /*
+    Alignment ID's
+    */
+    
+        #center{
+            margin-left:auto;
+            margin-right:auto;
+        }
+        #left{
+            margin-left:auto;
+            margin-right:35%;
+            }
+        #mainleft{
+            float:left;
+            margin-left:-7.5%;
+            margin-right:auto;
+            }
+        #right{
+            margin-left:45%;
+            margin-right:auto;
+            }
+        #mainright{
+            float:left;
+            margin-left:auto;
+            margin-right:0%;
+            }
+        #bottom{
+            margin-left:5%;
+            margin-right:auto;
+            max-width:50%;
+            min-width:25%;
+            }
+    
+    /*
+    Image IDs
+    */
+    
+        #nircaimg{    
+    width:65%;
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 50px;
+    max-width="100%"; height: auto;
+        }
+    #nircaimgmobile{
+        width:65%;
+            display: none;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 50px;
+    max-width="100%"; height: auto;
+}
+        #imageWomanCoordinator{
+            float:right;
+            margin-left:auto;
+            margin-right:5%;
+            margin-top:-425px;
+            border-style:none;
+            }
+        #imageManCoordinator{
+            float:right;
+            margin-left:auto;
+            margin-right:12.5%;
+            margin-top:-275px;
+            border-style:none;
+            }
+        #results{
+            background-color: transparent;
+            float:left;
+            margin-top:-150px;
+            margin-right:auto;
+            margin-left:2.5%;
+            border-style:none;
+            }
+        #nirca{
+            float:left;
+            margin-left: -180px;
+            margin-right: auto;
+            margin-top: 260px;
+            border-style: none;
+            }
+        
+        #womennatspic{
+/*
+         width:50%;  you can use % 
+            height: auto;   
+*/
+        }
+    #mobilepic{
+display: none;
+        }
+        #humpbackpic{
+/*
+            margin-left: auto;
+            margin-right: auto;
+*/
+              
+        }
+        #image1{
+            float: none;
+            position:static;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            z-index:-1;
+            border-style:none;
+            }
+        #image2{
+            float: left;
+            margin-left: 2.5%;
+            margin-right: auto;
+            margin-top: 0px;
+            z-index:-1;
+            border-style:none;
+            }
+        #image3{
+            float:none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+            z-index:-1;
+            border-style:none;
+            }
+        
+        
+        #image5{
+            margin-left:10%;
+            margin-right:60%;
+            position:relative;
+            z-index:2;
+            border-style:none;
+            margin-top:40px;
+            margin-bottom: 50px;
+            }
+        #menbeforemeet{
+             
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #womenaftermeet{
+            height: auto; /* you can use % */
+            width: 80%;   
+            display: block;
+            margin-top: 15%;
+            margin-bottom: 15%;
+        }
+        #menwcpic{
+           height: auto; /* you can use % */
+            width: 50%;   
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px; 
+        }
+        #womenwcpic{
+           height: auto; /* you can use % */
+            width: 80%;   
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+        }
+        
+        #liftingpic1{
+            width: 20%;
+            height: auto;
+        }
+        #liftingpic2{
+            width: 20%;
+            height: auto;
+        }
+        #liftingpic3{
+            width: 20%;
+            height: auto;
+        }
+        #liftingpic4{
+            width: 20%;
+            height: auto;
+        }
+    
+    /*
+    Map IDs
+    */
+    
+        #map1{
+            margin-top:-325px;
+            }
+        
+        #map2{
+            margin-top:-310px;
+            }
+            
+        #map3{
+            margin-top:-310px;
+            }
+            
+        #map4{
+            margin-top:-310px;
+            }
+    #allmap{
+         width:50%; /* you can use % */
+`       height: 5;
+       margin: auto;
+        margin-top: 305;
+        margin-bottom: 30%;
+        position:relative;
+                display: block;
+
+        
+    }
+        
+    #racescheduleh4{
+    margin-top: 30px;
+    }
+    #introdiv{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+/*Log form IDs*/
+
+    #dateform{
+        width: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #contentform{
+        width: 70px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #newcontentform{
+        width: 70px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #newcontentdiv{
+        display: none;
+    }
+    #numberform{
+        width: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #createlog{
+        display: none;
+
+    }
+    #createlogtitle{
+    }
+    #loadlog{
+        display: none;
+    }
+    #loadlogtitle{
+/*
+        visibility: hidden;
+*/
+    }
+    #helploglist{
+        text-align: left;
+    margin-left: 15%;
+    margin-right: auto;
+    list-style-type:circle;
+    }
+    #helplog{
+        display: none;
+    }
+    #showhelplink{
+        	color: #555753;  
+    }
+
+/* *****Workout Log***** */
+
+/* Aside */
+aside{
+    width:30%;
+    float:none;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3.log{
+font-size: 30px;
+
+}
+
+input.log{
+
+}
+
+div.log{
+    
+}
+ul.log{
+    text-align: left;
+        margin-left: 22%;
+
+}
+input.changerow{
+    margin-top = 0;
+    margin-bottom: 30px;
+    display: none;
+    
+
+}
+table.log{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+
+}
+
+div.logmain{
+
+            margin-top:0;
+            margin-bottom: 20px;
+            text-align:center;
+
+            position:relative;
+            z-index:2;   
+            width: 100%;
+    
+}
+div.loglogdiv{
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+ul.loglogdiv{
+   text-align: left; 
+}
+
+input.logdate{
+   width: 20px; 
+    
+}
+input.gdate{
+    width: 20px;
+    height: 15px;
+    
+}
+ul.logdate{
+    margin: 0;
+    padding: 0;
+    
+}
+
+ul.logdate li{
+   display: inline; 
+}
+
+#graphhr{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#graphtitle{
+ margin-left: auto;
+margin-right: auto;
+}
+.modgraphtitle{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.graphform{
+    margin-bottom: 15px; 
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+
+
+div.graph{
+ width: 100%;   
+height: 400px;
+}
+
+#graphformlist{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+a.loglink:link, a.loglink:visited, a.loglink:hover, a.loglink:focus, a.loglink:active, a.loglink{
+	color: #4D4D97; 
+    font-weight:bold;
+}
+
+#registerdiv{
+ width: 150px;
+margin-left: auto;
+    margin-right: auto;
+}
+input    {
+/*
+display:block;
+*/
+background-color: transparent;
+border: 1px solid #999;
+height: 25px;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+table.extralog{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Tabs Code*/
+
+div.TabView div.Tabs
+{
+    margin-left: auto;
+    margin-right: auto;
+  height: 81px;
+  overflow: hidden;
+    background-color: #D7D7D7;
+}
+
+div.TabView div.Tabs a
+{
+  float: left;
+  display: block;
+    font-size: 11px;
+background-color: #373737;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 15px;
+  width:  15%;
+  text-align: center;
+
+height:      53px;
+vertical-align: middle;
+border-radius: 3px;
+color: #E3E3E3;
+}
+
+div.TabView div.Tabs a.Active{
+    background-image: url('brushed_@2X.png');
+    border: 1px solid #B6B6B6;
+    border-bottom-width: 0px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 71px;
+    color: #00004C;
+
+}
+
+h4.logoutlink{
+  margin-top: 12px;
+    font-size: 12px;
+    border: none;
+    
+}
+.logoutlink{
+        color: #00004C;
+
+    background-color: transparent;
+border: 1px solid #999;
+height: 25px;
+/*
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+*/
+    
+}
+
+tr.trshowmore{
+    display: none;
+}
+#loadgif{
+    padding-top: 60px;
+}
+#dvLoading
+{
+    background:transparent url(images/loader.gif) no-repeat center center; 
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    z-index: 1000;
+    right: 50%;
+    top: 50%;
+/*
+   margin: -25px 0 0 -25px;
+*/
+}
+/*
+div.TabView div.Tabs a:hover
+{
+background-color: #D1621A;
+}
+*/
+
+div.TabView div.Pages
+{
+  clear: both;
+  border: 0 solid #404040;
+  overflow: hidden;
+}
+
+div.TabView div.Pages div.Page
+{
+  height: 100%;
+  padding: 0px;
+  overflow: hidden;
+  display: none;
+}
+
+div.TabView div.Pages div.Page div.Pad
+{
+  padding: 0;
+}
+
+/*Style below for the Navigation Bar. Originally written using Css3Menu Software, edited by CLW & SMZ*/
+
+
+		#nav
+		{
+			width: 60em; /* 1000 */
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			position: absolute;
+			top: 25%;
+			left: 50%;
+			margin-left: -30em; /* 30 480 */
+            z-index: 999;
+		}
+
+			#nav > a
+			{
+				display: none;
+			}
+            #nav ul{
+            position: fixed;
+            width: 100%;
+            margin-top: 0;
+            left: 0;
+}
+			#nav li
+			{
+				position: relative;
+			}
+				#nav li a
+				{
+					color: #fff;
+					display: block;
+				}
+				#nav li a:active
+				{
+					background-color: #c00 !important;
+				}
+
+			#nav span:after
+			{
+				width: 0;
+				height: 0;
+				border: 0.313em solid transparent; /* 5 */
+				border-bottom: none;
+    /* Triangle Color*/
+				border-top-color: #efa585;
+				content: '';
+				vertical-align: middle;
+				display: inline-block;
+				position: relative;
+				right: -0.313em; /* 5 */
+			}
+
+			/* first level */
+
+			#nav > ul
+			{
+				height: 3.75em; /* 60 */
+                /*Main bar background*/
+				background-color: #00004C;
+                opacity: .9;
+                top: 0;
+			}
+				#nav > ul > li
+				{
+					width: 25%;
+					height: 100%;
+					float: left;
+				}
+					#nav > ul > li > a
+					{
+						height: 100%;
+						font-size: 1.5em; /* 24 */
+						line-height: 2.5em; /* 60 (24) */
+						text-align: center;
+					}
+						#nav > ul > li:not( :last-child ) > a
+						{
+    /*Main Bar Dividers*/
+							border-right: 1px solid #4D4D94;
+						}
+						#nav > ul > li:hover > a,
+						#nav > ul:not( :hover ) > li.active > a
+						{
+    /*Top while dropped down*/
+							background-color: #D1621A;
+						}
+
+
+				/* second level */
+
+				#nav li ul
+				{
+    /*Dropdown background*/
+					background-color: #D1621A;
+					display: none;
+					position: absolute;
+					top: 100%;
+				}
+					#nav li:hover ul
+					{
+						display: block;
+						left: 0;
+						right: 0;
+					}
+						#nav li:not( :first-child ):hover ul
+						{
+							left: -1px;
+						}
+						#nav li ul a
+						{
+							font-size: 1.25em; /* 20 */
+    /*Dropdown Dividers*/
+							border-top: 1px solid #ff6501;
+							padding: 0.75em; /* 15 (20) */
+						}
+							#nav li ul li a:hover,
+							#nav li ul:not( :hover ) li.active a
+							{
+    /*Highlight Text*/
+								background-color: #ff6501;
+							}
+
+
+
+
+/*Mobile mode*/
+        @media only screen and ( min-device-width : 320px ) and (max-device-width : 568px) and (orientation : portrait) /* 1000 */
+		{
+           /* For the log */
+    
+        button.logoutlink{
+        width: 40px;
+        font-size: 8px;
+    }
+    
+    h4.logoutlink{
+        font-size: 8px;
+    }
+
+div.TabView div.Tabs a {
+    font-size: 0;
+}
+
+#logicon1{
+    margin-top: 12.5px;
+}
+#logicon2{
+    margin-top: 12.5px;
+}
+#logicon3{
+    margin-top: 12.5px;
+}
+#logicon4{
+    margin-top: 12.5px;
+}
+#logicon5{
+   margin-top: 12.5px; 
+}
+    #graphformlist{
+    margin-right: auto;
+        margin-left: auto
+            margin-right: auto;
+
+    width: 100%;
+}
+            #graphtitle{
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #graphhr{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            div.logmain{
+                width: 100%
+            }   
+            
+           aside.logaside{
+                float: none;
+                margin-left: auto;
+                margin-right: auto;
+                border-bottom:1px dashed #aaa;
+                border-left:none;
+                padding-bottom:15px;
+            }
+            div.graph{
+                width: 100%;
+            }  
+            .graphform{
+                white-space:normal;
+
+            }
+            ul.graphformlist{
+                margin-left: auto;
+                margin-right: auto;
+                white-space:normal;
+            }
+            #graphformlist{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .modgraphtitle{
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+
+
+            #mainimg{
+                float: none;
+                width: 100%
+            }
+			#nav
+			{
+				width: 100%;
+				position: static;
+				margin: 0;
+			}#nav
+			{
+				width: 100%;
+				position: static;
+				margin: 0;
+			}
+            body{
+                width: 320px;
+            }  
+            #mobilepic{
+                display: block;
+            }
+            #nircaimgmobile{
+                display: block;
+            }
+            div.maincontent{
+                float:none;
+                width: 100%
+            }
+            div.mainimglist{
+                display: none;
+            }
+             div.mainimg{
+                float:none;
+                width: 100%
+            }
+            #cenimg{
+                margin-top:15%;
+                margin-bottom: 15%;
+            }
+            ul.contactus{
+                margin-left:20%;
+            }   
+        
+		}
+		@media only screen and ( max-width: 481px ) /* 1000 */
+		{
+			#nav
+			{
+				width: 100%;
+				position: static;
+				margin: 0;
+			}
+		}
+
+
+/*Small Browser window*/
+		@media only screen and ( max-width: 480px ) /* 640 */
+		{
+          
+    
+            /* For the log*/
+    button.logoutlink{
+        width: 40px;
+        font-size: 8px;
+    }
+    
+    h4.logoutlink{
+        font-size: 8px;
+    }
+
+div.TabView div.Tabs a {
+    font-size: 0;
+}
+
+#logicon1{
+    margin-top: 12.5px;
+}
+#logicon2{
+    margin-top: 12.5px;
+}
+#logicon3{
+    margin-top: 12.5px;
+}
+#logicon4{
+    margin-top: 12.5px;
+}
+#logicon5{
+   margin-top: 12.5px; 
+}
+        #graphformlist{
+    margin-right: auto;
+        margin-left: auto
+            margin-right: auto;
+
+    width: 100%;
+}
+            #graphtitle{
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #graphhr{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            div.logmain{
+                width: 100%
+            }   
+            
+           aside.logaside{
+                float: none;
+                margin-left: auto;
+                margin-right: auto;
+                border-bottom:1px dashed #aaa;
+                border-left:none;
+                padding-bottom:15px;
+            }
+            div.graph{
+                width: 100%;
+            }  
+            .graphform{
+                white-space:normal;
+
+            }
+            ul.graphformlist{
+                margin-left: auto;
+                margin-right: auto;
+                white-space:normal;
+            }
+            #graphformlist{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .modgraphtitle{
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+
+
+            #mobilepic{
+        margin-top: 15%;
+                margin-bottom: 15%;
+                display: block;
+            }
+            #nircaimgmobile{
+                display: block;
+            }
+            div.maincontent{
+                float:none;
+                width: 100%
+            }
+            div.mainimg{
+                float:none;
+                width: 100%
+            }
+            div.mainimglist{
+                display: none;
+            }
+           #cenimg{
+                margin-top:15%;
+                margin-bottom: 15%;
+            }
+            ul.contactus{
+                margin-left:20%;
+            }
+
+	
+
+			#nav
+			{
+				position: fixed;
+				top: 5px;
+				left: 5px;
+			}
+				#nav > a
+				{
+					width: 6.125em; /* 50 */
+					height: 6.125em; /* 50 */
+					text-align: left;
+					text-indent: -9999px;
+    /*Square Background*/
+					background-color: #00004C;
+					position: relative;
+				}
+					#nav > a:before{
+                    	position: absolute;
+						border: 4px solid #fff;
+                        border-right-style: none;
+                        border-left-style: none;
+						top: 27%;
+						left: 25%;
+						right: 25%;
+						content: '';
+                        height: 15%;
+                        margin-bottom: 0;
+                    }
+					#nav > a:after
+					{  
+                        margin-top: 8%;
+						position: absolute;
+						border: 4px solid #fff;
+                        border-right-style: none;
+                        border-left-style: none;
+                        border-bottom-style: none;
+						top: 25%;
+						left: 25%;
+						right: 25%;
+						content: '';
+                        height: 15%;
+
+					}
+					#nav > a:after
+					{
+						top: 60%;
+					}
+
+				#nav:not( :target ) > a:first-of-type,
+				#nav:target > a:last-of-type
+				{
+					display: block;
+				}
+
+
+			/* first level */
+
+			#nav > ul
+			{
+				height: auto;
+				display: none;
+				position: absolute;
+				left: 0;
+				right: 0;
+                top:auto;
+
+			}
+				#nav:target > ul
+				{
+					display: block;
+                    
+				}
+				#nav > ul > li
+				{
+					width: 100%;
+					float: none;
+				}
+					#nav > ul > li > a
+					{
+						height: auto;
+						text-align: left;
+						padding: 0 0.833em; /* 20 (24) */
+					}
+						#nav > ul > li:not( :last-child ) > a
+						{
+							border-right: none;
+    /*Between mini dropdown*/
+							border-bottom: 1px solid #4D4D94;
+						}
+
+
+				/* second level */
+
+				#nav li ul
+				{
+					position: static;
+					padding: 1.25em; /* 20 */
+					padding-top: 0;
+				}
+		}
+
+

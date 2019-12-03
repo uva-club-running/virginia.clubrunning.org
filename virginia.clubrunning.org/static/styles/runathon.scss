@@ -1,0 +1,42 @@
+@import "base";
+
+.splash.image {
+	background-size: contain;
+}
+
+.splash.page-title.image {
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.splash {
+	.container {
+
+		p.callout {
+			margin: 10px 0;
+			font-size: 2.2rem;
+			text-align: center;
+
+			span {
+				font-size: 3rem;
+				font-weight: 900;
+			}
+		}
+	}
+}
+
+#banner {
+	width: 100%;
+
+	img {
+		width: 100%;
+	}
+}
+
+#register {
+	.container {
+		.big-button {
+			margin: 10px 0;
+		}
+	}
+}
