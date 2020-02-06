@@ -1282,6 +1282,9 @@ p {
 .splash .container a::after {
   content: "  ⇒";
 }
+.splash .container a.no-arrow::after {
+  content: "";
+}
 .splash .container sup a::after {
   content: "";
 }

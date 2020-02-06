@@ -1282,6 +1282,9 @@ p {
 .splash .container a::after {
   content: "  ⇒";
 }
+.splash .container a.no-arrow::after {
+  content: "";
+}
 .splash .container sup a::after {
   content: "";
 }
@@ -1587,6 +1590,115 @@ p {
   background-size: cover;
 }
 
+.disclaimer {
+  font-size: 1em;
+  font-weight: light;
+  font-style: italic;
+  line-height: 1.3em;
+}
+
+.splash .container .big-button {
+  margin: 10px 0 10px 0;
+}
+.splash .container form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #323232;
+  /* from https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
+  /* Firefox */
+  /* end from https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
+}
+.splash .container form label {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.splash .container form input[type=text], .splash .container form input[type=email], .splash .container form input[type=number] {
+  display: box;
+  font-size: 1.3em;
+}
+.splash .container form input[type=text]::placeholder, .splash .container form input[type=email]::placeholder, .splash .container form input[type=number]::placeholder {
+  color: #dfdfdf;
+  font-size: 1em;
+}
+.splash .container form input::-webkit-outer-spin-button,
+.splash .container form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.splash .container form input[type=number] {
+  -moz-appearance: textfield;
+}
+.splash .container form input[type=submit] {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.23em;
+  padding: 5px 15px 5px 15px;
+  color: #F8F0E7;
+  background-color: #ff8d53;
+  border: 2px solid #F8F0E7;
+  font-weight: bold;
+}
+.splash .container form input[type=submit]:hover {
+  background-color: #F8F0E7;
+  color: #ff8d53;
+  cursor: pointer;
+}
+.splash .container .section .row {
+  flex-wrap: wrap;
+}
+.splash .container .section .row .separator {
+  width: 1px;
+  background-color: #323232;
+}
+.splash .container .section .row .col-section {
+  margin: 0 10px 0 10px;
+}
+.splash .container .section .row .col-section:first-child {
+  margin: 0 10px 0 0;
+}
+.splash .container .section .row .col-section:last-child {
+  margin: 0 0 0 10px;
+}
+.splash .container .section .row .col-section#runners-list {
+  flex: 1.2;
+  min-width: 40%;
+}
+.splash .container .section .row .col-section#runners-list .runners {
+  height: 300px;
+  overflow-y: scroll;
+}
+.splash .container .section .row .col-section#runners-list .runners table {
+  width: 100%;
+  font-size: 1em;
+  border-spacing: 0 0;
+}
+.splash .container .section .row .col-section#runners-list .runners table tr {
+  background-color: #F8F0E7;
+}
+.splash .container .section .row .col-section#runners-list .runners table tr td {
+  padding: 5px 5px 5px 5px;
+}
+.splash .container .section .row .col-section#runners-list .runners table tr:nth-child(odd) {
+  background-color: #e0d9d1;
+}
+.splash .container .section .row .col-section {
+  flex: 1;
+  padding: 0px 5px 0px 5px;
+}
+.splash .container .section .row .col-section form input[type=submit] {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.23em;
+  padding: 5px 15px 5px 15px;
+  color: #ff8d53;
+  background-color: #F8F0E7;
+  border: 2px solid #ff8d53;
+  font-weight: bold;
+}
+.splash .container .section .row .col-section form input[type=submit]:hover {
+  color: #F8F0E7;
+  background-color: #ff8d53;
+}
 .splash .container p.callout {
   margin: 10px 0;
   font-size: 2.2rem;

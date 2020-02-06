@@ -383,6 +383,10 @@ p {
 		a::after {
 			content: '\000A0\000A0\021D2';
 		}
+
+		a.no-arrow::after {
+			content: ''
+		}
 		sup {
 			a::after {
 				content: '';

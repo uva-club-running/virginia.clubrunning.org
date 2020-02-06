@@ -51,34 +51,81 @@
 			<div class="container fill">
 				<div class="background blue">
 					<h1>Run-a-thon</h1>
-					<h2>Help us support St. Jude Children&rsquo;s Hospital.</h2>
+					<h2>Help us support UVA Children's Hospital.</h2>
 				</div>
 			</div>
 		</div>
 
 		<div class="splash orange">
-			<div class="container fill">
-				<p class="callout"><span>23</span> runners</p>
-				<p class="callout"><span>206</span> miles</p>
-				<p class="callout"><span>$3,233</span> raised</p>
+			<div class="container">
+				<a class="big-button" href="#signup">Sign up to run</a>
 			</div>
 		</div>
-
+		<div class="splash white" id="section-runners-pledge">
+			<div class="container fill">
+				<div class="section">
+					<div class="row">
+						<div class="col-section" id="runners-list">
+							<h2>Hoo's running?</h2>
+							<br/>
+							<div class="runners">
+								<table>
+									<tbody id="runners-body">
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-section" id="pledge-form">
+							<h2>Pledge to <span class="strong" id="pledge-selected-name"></span></h2>
+							<form action="http://localhost:5000/pledge" method="POST">
+								<input type="hidden" name="runner_id" id="pledge-selected-id" value="-1"/> 
+								<label for="name">Name</label><br/>
+								<input type="text" name="name" maxlength="50" placeholder="e.g. Gen. R. Russ"></input><br/><br/>
+								<label for="name">Email</label><br/>
+								<p class="disclaimer">We'll use this to contact you about your donation.</p>
+								<input type="email" name="email" placeholder="e.g. russg@example.com"></input><br/><br/>
+								<label for="amount">Amount per lap</label><br/>
+								<p class="disclaimer">Enter how much money you wish to donate for every lap <span class="strong" id="pledge-selected-name-second"></span> completes.</p>
+								<input type="number" name="amount_per_lap" placeholder="e.g. 5"></input><br/><br/>
+								<input type="submit" value="Pledge" /><br/>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="splash orange" id="signup">
+			<div class="container">
+				<h2>Runner Sign-Up</h2>
+				<p>Want to run? Enter your name and contact information below.</p>
+				<form action="http://localhost:5000/register" method="POST">
+					<label for="name">Full Name</label>
+					<p class="disclaimer">Enter your name as you would like it to appear on the site.</p>
+					<input type="text" name="name" placeholder="e.g. Nick Quick" maxlength="30" required></input><br/><br/>
+					<label for="email">Email</label>
+					<p class="disclaimer">Enter an email @virginia.edu. We'll use this to get in touch with you.</p>
+					<input type="email" name="email" placeholder="e.g. ncq4nz@virginia.edu" maxlength="50" required></input><br/><br/>
+					<input type="submit" value="Sign me up!" /><br/>
+					<p class="disclaimer"><span class="strong">Warning!</span> After you sign up, the full name you entered will be posted on the website, and you will be able to start collecting pledges. Make sure that your information is correct—and that you're okay with this—before you submit.</p>
+				</form>
+				<p class="disclaimer">Submit incorrect information or need to be removed? <a href="mailto:jek4qv@virginia.edu?subject=Runathon">Contact our Webmaster.</a></p>
+			</div>
+		</div>
 		<div class="splash white">
 			<div class="container fill">
-<!--				<p>-->
-<!--					Join Club Running and the greater Charlottesville community for the club&rsquo;s first Run-a-thon! Get family and friends to pledge donations for each lap you run (approx. 900 meters). All proceeds will go to support St. Jude Children&rsquo;s Hospital! We hope to see you there! Details are limited currently but more updates will come as the event gets closer.-->
-<!--				</p>-->
+				<!--				<p>-->
+				<!--					Join Club Running and the greater Charlottesville community for the club&rsquo;s first Run-a-thon! Get family and friends to pledge donations for each lap you run (approx. 900 meters). All proceeds will go to support St. Jude Children&rsquo;s Hospital! We hope to see you there! Details are limited currently but more updates will come as the event gets closer.-->
+				<!--				</p>-->
 				<p>Thank you to everyone who ran, volunteered, or sponsored! We were able to raise an enormous amount for St. Jude and look forward to an even more successful Run-a-thon next year! Please get in touch if you&rsquo;d be interested in partnering with us or sponsoring the event.</p>
 			</div>
 		</div>
 
-<!--		<div class="splash orange" id="register">-->
-<!--			<div class="container">-->
-<!--				<a class="big-button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScyF7SkVlknqLuhBQYVRA-rcyajVVT2RXst0caelc7qMz40sw/viewform">runner registration</a>-->
-<!--				<a class="big-button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScIqHSPWW5c4A63ASSEONCG4X9nX30xXhdnaYph9dU2LH8Hmg/viewform">sponsor registration</a>-->
-<!--			</div>-->
-<!--		</div>-->
+		<!--		<div class="splash orange" id="register">-->
+		<!--			<div class="container">-->
+		<!--				<a class="big-button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScyF7SkVlknqLuhBQYVRA-rcyajVVT2RXst0caelc7qMz40sw/viewform">runner registration</a>-->
+		<!--				<a class="big-button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScIqHSPWW5c4A63ASSEONCG4X9nX30xXhdnaYph9dU2LH8Hmg/viewform">sponsor registration</a>-->
+		<!--			</div>-->
+		<!--		</div>-->
 
 		<div class="splash gray">
 			<div class="container fill">
@@ -86,18 +133,23 @@
 				<p><span class="strong">time</span> TBD</p>
 				<p><span class="strong">location</span> TBD</p>
 			</div>
+			<div class="container fill">
+				<p><span class="strong">Questions? Corrections?</span> Contact our webmaster, <a href="mailto:jek4qv@virginia.edu" class="no-arrow">Joe Kerrigan.</a></p>
+			</div>
 		</div>
 
-<!--		<div class="splash white" id="banner">-->
-<!--			<img src="static/images/splash/runathon/1.jpg" alt="">-->
-<!--		</div>-->
+		<!--		<div class="splash white" id="banner">-->
+		<!--			<img src="static/images/splash/runathon/1.jpg" alt="">-->
+		<!--		</div>-->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript">
-            let version = (new Date()).getTime();
-            let script = document.createElement("script");
-            script.src = "static/scripts/app.js?v=" + version;
-            document.body.appendChild(script);
+let version = (new Date()).getTime();
+let script = document.createElement("script");
+script.src = "static/scripts/app.js?v=" + version;
+document.body.appendChild(script);
+		</script>
+		<script type="text/javascript" src="static/scripts/runathon.js">
 		</script>
 	</body>
 </html>

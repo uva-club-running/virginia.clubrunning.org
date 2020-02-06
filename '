@@ -1,7 +1,5 @@
 @import "base";
 
-$theme-lightgray: #e0d9d1;
-
 .splash.image {
 	background-size: contain;
 }
@@ -32,28 +30,14 @@ $theme-lightgray: #e0d9d1;
 				font-weight: bold;
 				font-size: 1.2em;
 			}
-			input[type=text], input[type=email], input[type=number] {
+			input[type=text], input[type=email] {
 				display: box;
 				font-size: 1.3em;
 			}
-			input[type=text]::placeholder, input[type=email]::placeholder, input[type=number]::placeholder {
+			input[type=text]::placeholder, input[type=email]::placeholder {
 				color: #dfdfdf;
 				font-size: 1.0em;
 			}
-
-			/* from https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
-			input::-webkit-outer-spin-button,
-			input::-webkit-inner-spin-button {
-				-webkit-appearance: none;
-				margin: 0;
-			}
-
-			/* Firefox */
-			input[type=number] {
-				-moz-appearance:textfield;
-			}
-			/* end from https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
-
 			input[type=submit] {
 				display: block;
 				margin-top: 5px;
@@ -77,32 +61,19 @@ $theme-lightgray: #e0d9d1;
 					background-color: $theme-gray;
 				}
 				flex-wrap: wrap;
-				.col-section {
-					margin: 0 10px 0 10px;
-				}
-				.col-section:first-child {
-					margin: 0 10px 0 0; // only want margin on right
-				}
-				.col-section:last-child {
-					margin: 0 0 0 10px; // only want margin on left
-				}
 				.col-section#runners-list {
-					flex: 1.2;
+					flex: 1.5;
 					min-width: 40%;
 					.runners {
 						table {
 							width: 100%;
 							font-size: 1.0em;
-							border-spacing: 0 0;
 
 							tr {
-								background-color: $theme-white;
-								td { 
-									padding: 5px 5px 5px 5px;
-								}
+								padding: 15px 0px 15px 0px;
 							}
 							tr:nth-child(odd) {
-								background-color: $theme-lightgray;
+								background-color: blue;
 							}
 						}
 						height: 300px;
@@ -112,24 +83,6 @@ $theme-lightgray: #e0d9d1;
 				.col-section {
 					flex: 1;
 					padding: 0px 5px 0px 5px;
-
-					form {
-						input[type=submit] {
-							display: block;
-							margin-top: 5px;
-							font-size: 1.23em;
-							padding: 5px 15px 5px 15px;
-							color: $theme-orange;
-							background-color: $theme-white;
-							border: 2px solid $theme-orange;
-							font-weight: bold;
-						}
-						input[type=submit]:hover {
-							color: $theme-white;
-							background-color: $theme-orange;
-						}
-					}
-
 				}
 			}
 		}
