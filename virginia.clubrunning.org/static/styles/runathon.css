@@ -1597,6 +1597,10 @@ p {
   line-height: 1.3em;
 }
 
+.splash .container {
+  max-width: 1100px;
+  padding: 80px 10px;
+}
 .splash .container .big-button {
   margin: 10px 0 10px 0;
 }
@@ -1661,15 +1665,15 @@ p {
 }
 .splash .container .section .row .col-section#runners-list {
   flex: 1.2;
-  min-width: 40%;
+  min-width: 300px;
 }
 .splash .container .section .row .col-section#runners-list .runners {
-  height: 300px;
+  max-height: 600px;
   overflow-y: scroll;
 }
 .splash .container .section .row .col-section#runners-list .runners table {
   width: 100%;
-  font-size: 1em;
+  font-size: 1.2em;
   border-spacing: 0 0;
 }
 .splash .container .section .row .col-section#runners-list .runners table tr {

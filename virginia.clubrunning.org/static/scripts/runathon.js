@@ -1,13 +1,15 @@
-var API_ROOT = "http://localhost:5000";
+var API_ROOT = "http://67.207.81.90/runathonapi";
 var runners;
 function ready() {
+	// test warning
+	alert("Warning! This page is still in testing, so sign-ups completed on this page are not for real. If you're here by mistake, get out!");
 	populateRunners().then(() => {
 		// for pledge links: hide runner's table, automatically show pledge window
 		var query = window.location.search;
 		var params = new URLSearchParams(query);
 		if(runners.length > 0) {
 			// initialize our pledge view
-			updatePledgeSelection(runners[0].runner_id);
+			updatePledgeSelection(runners[0].runner_id, false);
 
 			// check if we have a specific pledge to show
 			var pledgeTo = params.get("pledge_to");
@@ -20,6 +22,9 @@ function ready() {
 		} else {
 			document.getElementById("section-runners-pledge").remove();
 		}
+	}).catch((err) => {
+		console.error(err);
+		document.getElementById("section-runners-pledge").remove();
 	});
 }
 function populateRunners() {
@@ -36,11 +41,11 @@ function populateRunners() {
 				var runner = runners[i];
 				var row = document.createElement("tr");
 				var name = document.createElement("td");
-				name.innerHTML = runner.name;
+				name.innerHTML = "<span class=\"strong\">"+(i + 1)+". </span> "+runner.name;
 				var amount = document.createElement("td");
 				amount.innerHTML = "<span class=\"strong\">$"+runner.amount_per_lap+"</span> per lap";
 				var pledge = document.createElement("td");
-				pledge.innerHTML = "<a onclick=\"updatePledgeSelection("+runner.runner_id+")\">Pledge</a>";
+				pledge.innerHTML = "<a onclick=\"updatePledgeSelection("+runner.runner_id+", true)\">Pledge</a>";
 				row.appendChild(name);
 				row.appendChild(amount);
 				row.appendChild(pledge);
@@ -48,7 +53,7 @@ function populateRunners() {
 			}
 		});
 }
-function updatePledgeSelection(runner_id, name) {
+function updatePledgeSelection(runner_id, scroll) {
 	console.log("Selected "+runner_id);
 
 	var selected;
@@ -64,7 +69,8 @@ function updatePledgeSelection(runner_id, name) {
 		document.getElementById("pledge-selected-name").innerHTML = selected.name;
 		document.getElementById("pledge-selected-name-second").innerHTML = selected.name;
 		document.getElementById("pledge-selected-id").value = selected.runner_id;
-		document.getElementById("pledge-form").scrollIntoView();
+		if(scroll) 
+			document.getElementById("pledge-form").scrollIntoView();
 	}
 }
 window.addEventListener("DOMContentLoaded", ready);

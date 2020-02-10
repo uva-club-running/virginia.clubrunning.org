@@ -77,17 +77,19 @@
 						</div>
 						<div class="col-section" id="pledge-form">
 							<h2>Pledge to <span class="strong" id="pledge-selected-name"></span></h2>
-							<form action="http://localhost:5000/pledge" method="POST">
+							<form action="http://67.207.81.90/runathonapi/pledge" method="POST">
 								<input type="hidden" name="runner_id" id="pledge-selected-id" value="-1"/> 
 								<label for="name">Name</label><br/>
-								<input type="text" name="name" maxlength="50" placeholder="e.g. Gen. R. Russ"></input><br/><br/>
+								<input type="text" name="name" maxlength="50" size="20" placeholder="e.g. Gen. R. Russ" required></input><br/><br/>
 								<label for="name">Email</label><br/>
 								<p class="disclaimer">We'll use this to contact you about your donation.</p>
-								<input type="email" name="email" placeholder="e.g. russg@example.com"></input><br/><br/>
+								<input type="email" name="email" size="20" placeholder="e.g. russg@example.com" required></input><br/><br/>
 								<label for="amount">Amount per lap</label><br/>
 								<p class="disclaimer">Enter how much money you wish to donate for every lap <span class="strong" id="pledge-selected-name-second"></span> completes.</p>
-								<input type="number" name="amount_per_lap" placeholder="e.g. 5"></input><br/><br/>
+								<input type="number" name="amount_per_lap" placeholder="e.g. 5" min="1" max="1000" required></input><br/><br/>
 								<input type="submit" value="Pledge" /><br/>
+								<p class="disclaimer"><span class="strong">Warning!</span> After you pledge, the amount entered will be added to this runner's total amount pledged per lap, so be careful to make sure that everything you've entered above is correct before submitting.</p><br/>
+								<p class="disclaimer">Submit incorrect information or need to cancel your pledge? <a href="mailto:jek4qv@virginia.edu?subject=Runathon">Contact our Webmaster.</a></p>
 							</form>
 						</div>
 					</div>
@@ -98,7 +100,7 @@
 			<div class="container">
 				<h2>Runner Sign-Up</h2>
 				<p>Want to run? Enter your name and contact information below.</p>
-				<form action="http://localhost:5000/register" method="POST">
+				<form action="http://67.207.81.90/runathonapi/register" method="POST">
 					<label for="name">Full Name</label>
 					<p class="disclaimer">Enter your name as you would like it to appear on the site.</p>
 					<input type="text" name="name" placeholder="e.g. Nick Quick" maxlength="30" required></input><br/><br/>
@@ -113,10 +115,10 @@
 		</div>
 		<div class="splash white">
 			<div class="container fill">
-				<!--				<p>-->
-				<!--					Join Club Running and the greater Charlottesville community for the club&rsquo;s first Run-a-thon! Get family and friends to pledge donations for each lap you run (approx. 900 meters). All proceeds will go to support St. Jude Children&rsquo;s Hospital! We hope to see you there! Details are limited currently but more updates will come as the event gets closer.-->
-				<!--				</p>-->
-				<p>Thank you to everyone who ran, volunteered, or sponsored! We were able to raise an enormous amount for St. Jude and look forward to an even more successful Run-a-thon next year! Please get in touch if you&rsquo;d be interested in partnering with us or sponsoring the event.</p>
+								<p>
+									Join Club Running and the University community for the Run-a-thon! Get family and friends to pledge donations for each lap you run (approx. 900 meters). All proceeds will go to support UVA Children&rsquo;s Hospital! We hope to see you there! Details are limited currently but more updates will come as the event gets closer.
+								</p>
+								<!--0<p>Thank you to everyone who ran, volunteered, or sponsored! We were able to raise an enormous amount for St. Jude and look forward to an even more successful Run-a-thon next year! Please get in touch if you&rsquo;d be interested in partnering with us or sponsoring the event.</p>-->
 			</div>
 		</div>
 
@@ -124,7 +126,7 @@
 		<!--			<div class="container">-->
 		<!--				<a class="big-button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScyF7SkVlknqLuhBQYVRA-rcyajVVT2RXst0caelc7qMz40sw/viewform">runner registration</a>-->
 		<!--				<a class="big-button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScIqHSPWW5c4A63ASSEONCG4X9nX30xXhdnaYph9dU2LH8Hmg/viewform">sponsor registration</a>-->
-		<!--			</div>-->
+	<!--			</div>-->
 		<!--		</div>-->
 
 		<div class="splash gray">

@@ -20,6 +20,8 @@ $theme-lightgray: #e0d9d1;
 
 .splash {
 	.container {
+		max-width: 1100px;
+		padding: 80px 10px;
 		.big-button {
 			margin: 10px 0 10px 0;
 		}
@@ -88,11 +90,11 @@ $theme-lightgray: #e0d9d1;
 				}
 				.col-section#runners-list {
 					flex: 1.2;
-					min-width: 40%;
+					min-width: 300px;
 					.runners {
 						table {
 							width: 100%;
-							font-size: 1.0em;
+							font-size: 1.2em;
 							border-spacing: 0 0;
 
 							tr {
@@ -105,7 +107,7 @@ $theme-lightgray: #e0d9d1;
 								background-color: $theme-lightgray;
 							}
 						}
-						height: 300px;
+						max-height: 600px;
 						overflow-y: scroll;
 					}
 				}
