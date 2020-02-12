@@ -1,8 +1,6 @@
 var API_ROOT = "http://67.207.81.90/runathonapi";
 var runners;
 function ready() {
-	// test warning
-	alert("Warning! This page is still in testing, so sign-ups completed on this page are not for real. If you're here by mistake, get out!");
 	populateRunners().then(() => {
 		// for pledge links: hide runner's table, automatically show pledge window
 		var query = window.location.search;
