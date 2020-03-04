@@ -15,21 +15,14 @@
 	}
 }
 
-#schedule {
-	.container {
+.splash .container .section.contains-expandable h4 {
+	padding: 0;
+}
 
-		p {
-			margin: 10px 0;
-			//font-weight: 500;
-			line-height: 1.9rem;
-		}
-		ul {
-			font-weight: 500;
-			font-size: 1.1rem;
-			text-align: center;
-			line-height: 1.9rem;
-			padding: 0;
-			list-style: none;
+#schedule {
+	div.container {
+		h3 {
+			margin-bottom: 20px;
 		}
 	}
 }
