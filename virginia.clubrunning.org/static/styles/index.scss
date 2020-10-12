@@ -64,6 +64,29 @@
 	}
 }
 
+.splash {
+	.container.strava-container.fill {
+		max-width: calc(1100px + 2 * 30px);
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		div {
+			// the sidebar that we use with the strava widget
+			display: block;
+			flex-grow: 1; // grow to take up extra space (until a point)
+			flex-shrink: 2; // shrink first; the widget gets priority
+			flex-basis: 30rem; // initial width = max width
+			margin-right: 2em; // space out the widget a bi
+		}
+		
+		.widget {
+			display: block;
+			width: 20rem;
+		}
+	}
+}
 @media screen and (orientation: portrait) {
 	#landing-title {
 		background-image: none !important;

@@ -1634,6 +1634,25 @@ p {
   font-style: italic;
 }
 
+.splash .container.strava-container.fill {
+  max-width: calc(1100px + 2 * 30px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.splash .container.strava-container.fill div {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 30rem;
+  margin-right: 2em;
+}
+.splash .container.strava-container.fill .widget {
+  display: block;
+  width: 20rem;
+}
+
 @media screen and (orientation: portrait) {
   #landing-title {
     background-image: none !important;
