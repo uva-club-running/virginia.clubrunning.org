@@ -10,5 +10,7 @@ I hope to extend this document with maintenance notes, so stay updated for that.
 
 ## Todos
 
+- COVID response page
+    - One definitive resource for all COVID information: spreadsheets, Zoom social events, etc.
 - Make sure all positions are reflected in the Contact Us page (social chair)
 - Start putting workout schedules on the website (web app? automatic static deployment?)
