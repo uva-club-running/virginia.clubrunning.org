@@ -28,27 +28,12 @@ In general, I use the [Git feature branch](https://www.atlassian.com/git/tutoria
 4. Push your changes using `git push -u origin my_feature`.
 5. Make a pull request to merge your new changes into the `dev` branch.
 6. Approve the pull request.
-7. (Eventually) deploy your changes. See [Deployment](#Deployment).
+7. After the pull request is approved, GitHub Actions will deploy your changes to the live website. See [Deployment](#deployment).
 
-Future webmaster note: This process can be really tedious for tiny, atomic edits (such as spelling corrections, date changes, etc.)
-
-In that case, if you have write access, it's acceptable to commit directly on `dev` before deployment. Issues & PRs would be a waste of time. Remember to [deploy](#Deployment) after you have made your changes.
+Future webmaster note: This process can be really tedious for tiny, atomic edits (such as spelling corrections, date changes, etc.) In that case, it's acceptable to commit directly to `dev`.
 
 ## Deployment
-This repository is configured using GitHub Actions to automatically redeploy the website whenever you push to the `prod` branch. Nifty!
-
-Say you have completed several features and merged them into `dev`. Now, you want them to be merged into `prod`:
-
-0. Make sure you have a clean, up-to-date working directory. You don't want to lose any local changes!
-1. Make sure the `dev` branch is synchronized.
-    - `git checkout dev`
-    - `git pull`
-2. Switch to `prod` and merge changes from `dev`.
-    - `git checkout prod`
-    - `git merge dev`
-3. Push your changes, triggering a deployment through GitHub Actions:
-    - `git push`
-4. Watch the Actions page to make sure deployment succeeds.
+This repository is configured using GitHub Actions to automatically redeploy the website whenever you push to the `dev` branch. Every time you make changes on `dev` or merge a pull request, the pipeline will be triggered. Watch the Actions page to make sure deployment succeeds.
 
 ## Technical lore
 I (Joe Kerrigan) inherited this website in 2019, without a whole ton of information beyond a Word document containing the FTP server login. A major goal of mine is to improve the maintainability of this project for future webmasters.
