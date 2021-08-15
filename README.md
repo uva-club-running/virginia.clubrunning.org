@@ -16,9 +16,9 @@ The following steps outline the workflow I use for implementing a new feature or
 
 In general, I use the [Git feature branch](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) workflow to manage features and bugfixes.
 
-1. Create a new branch to do your work off of the `dev` branch.
+1. Create a new branch to do your work off of the `main` branch.
     - `git pull`
-    - `git checkout dev`
+    - `git checkout main`
     - `git checkout -B my_feature`
 2. Make changes on the new feature branch.
 3. If applicable, rebuild the website.
@@ -26,14 +26,14 @@ In general, I use the [Git feature branch](https://www.atlassian.com/git/tutoria
     - This will eventually be changed.
     - See [the section on building](#Building) for more.
 4. Push your changes using `git push -u origin my_feature`.
-5. Make a pull request to merge your new changes into the `dev` branch.
+5. Make a pull request to merge your new changes into the `main` branch.
 6. Approve the pull request.
 7. After the pull request is approved, GitHub Actions will deploy your changes to the live website. See [Deployment](#deployment).
 
-Future webmaster note: This process can be really tedious for tiny, atomic edits (such as spelling corrections, date changes, etc.) In that case, it's acceptable to commit directly to `dev`.
+Future webmaster note: This process can be really tedious for tiny, atomic edits (such as spelling corrections, date changes, etc.) In that case, it's acceptable to commit directly to `main`.
 
 ## Deployment
-This repository is configured using GitHub Actions to automatically redeploy the website whenever you push to the `dev` branch. Every time you make changes on `dev` or merge a pull request, the pipeline will be triggered. Watch the Actions page to make sure deployment succeeds.
+This repository is configured using GitHub Actions to automatically redeploy the website whenever you push to the `main` branch. Every time you make changes on `main` or merge a pull request, the pipeline will be triggered. Watch the Actions page to make sure deployment succeeds.
 
 ## Technical lore
 I (Joe Kerrigan) inherited this website in 2019, without a whole ton of information beyond a Word document containing the FTP server login. A major goal of mine is to improve the maintainability of this project for future webmasters.
