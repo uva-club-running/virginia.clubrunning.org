@@ -1,0 +1,5 @@
+# ignore node_modules
+# (don't commit installed packages to version control)
+node_modules/
+# ignore built website files
+dist/
