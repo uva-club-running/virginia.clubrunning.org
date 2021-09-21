@@ -5,6 +5,9 @@
   "repository": "git@github.com:joek13/club-running-site.git",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.42.0"
   }
 }
