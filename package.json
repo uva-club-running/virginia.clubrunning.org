@@ -8,6 +8,12 @@
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.0.0",
+    "http-server": "^13.0.2",
     "sass": "^1.42.0"
+  },
+  "scripts": {
+    "build": "yarn exec gulp build",
+    "watch": "yarn exec gulp watch",
+    "serve": "yarn exec gulp watch & yarn exec http-server ./dist/"
   }
 }
