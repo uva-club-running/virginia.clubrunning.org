@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const del = require("del");
+const sourcemaps = require("gulp-sourcemaps");
 
 /**
  * Removes the `dist` directory.
@@ -23,7 +24,9 @@ function copyStatic() {
  */
 function buildStyles() {
     return gulp.src("./src/styles/*.scss") // look for .scss files under ./src/styles
+        .pipe(sourcemaps.init()) // enable sourcemaps for developer quality of life
         .pipe(sass().on("error", sass.logError)) // compile them to css, logging any errors
+        .pipe(sourcemaps.write()) // write sourcemaps out
         .pipe(gulp.dest("./dist/static/styles/")); // copy to build directory
 }
 
