@@ -1,0 +1,10 @@
+{
+  "name": "clubrunningsite",
+  "version": "1.0.0",
+  "description": "Website for UVA Club Running, https://virginia.clubrunning.org",
+  "repository": "git@github.com:joek13/club-running-site.git",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
