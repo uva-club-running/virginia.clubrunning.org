@@ -11,6 +11,7 @@ Club Running is an athletic CIO at the University of Virginia. This repository c
 └── virginia.clubrunning.org - contains files which are copied to ./dist/ unaltered at build time.
     └── static
         ├── images - images used on the site
+        ├── results - mirrored results for *some* races
         └── scripts - JavaScript files used on the site
     └── index.html, meets.html, ... - the actual pages of the website.
 ```
