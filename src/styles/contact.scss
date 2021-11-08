@@ -66,3 +66,9 @@ $barcode: "Libre Barcode 128 Text", cursive;
 		transform: rotate(360deg);
 	}
 }
+
+// styling for pronouns next to exec's names
+span.pronouns {
+	font-weight: normal;
+	font-style: italic;
+}
