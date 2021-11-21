@@ -70,6 +70,8 @@ In general, I use the [Git feature branch](https://www.atlassian.com/git/tutoria
 Future webmaster note: This process can be really tedious for tiny, atomic edits (such as spelling corrections, date changes, etc.) In that case, it's acceptable to commit directly to `main`.
 
 ## Deployment
+*(For more information, see the wiki page [Deployment Deep Dive](https://github.com/uva-club-running/virginia.clubrunning.org/wiki/Deployment-Deep-Dive).)*
+
 This repository is configured using GitHub Actions to automatically rebuild and deploy the website whenever you push to the `main` branch. Every time you make changes on `main` or merge a pull request, the pipeline will be triggered. Watch the Actions page to make sure deployment succeeds.
 
 ## Technical lore
