@@ -1,0 +1,58 @@
+@import "base.scss";
+
+body {
+    #main-splash {
+        // background image for the splash
+        background-image: url("/static/images/page_photos/join.jpg");
+    }
+
+    // class for the page's main content.
+    // contains some more appropriate spacing for longer blocks of text.
+    .page-content {
+        h1,h2,h3,h4,h5,h6 {
+            margin-top: 1.2em;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .row > .column {
+            display: block;
+            width: 50%;
+
+            // override the ridiculously large h3 sizing that is here by default for some reason
+            h3 {
+                font-size: 1.3em;
+            }
+
+            // workout table styling
+            table {
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 100%;
+
+                border-spacing: 0;
+
+                // put border below each row except the last one
+                tr:not(:last-child) {
+                    td {
+                        border-bottom: 0.5px solid $theme-gray;
+                    }
+                }
+
+                tr {
+                    td {
+                        // more padding vertically than horizontally
+                        padding: 10px 5px 10px 5px;
+                    }
+                    td:last-child {
+                        // second column has right text alignment
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
