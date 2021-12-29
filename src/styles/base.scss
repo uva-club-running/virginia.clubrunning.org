@@ -82,6 +82,19 @@ p {
 	line-height: 2.5rem;
 }
 
+// subtitle class. intended to mimic h2 appearance,
+// but useful for styling semantic html elements.
+
+// e.g., might want to have an <h1> title and <p> subtitle
+// for accessibility reasons, but we want the <p> to look
+// like an <h2>.
+.subtitle {
+	font-size: 1.8rem;
+	font-weight: 300;
+	font-style: italic;
+	color: #323232;
+}
+
 #header {
 	display: flex;
 	position: absolute;
