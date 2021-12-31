@@ -20,13 +20,21 @@ body {
         }
 
         .row {
+            // flex layout for columns.
             display: flex;
+            // left to right
             flex-direction: row;
+            // wrap on to newline when the screen is not wide enough
+            flex-wrap: wrap;
         }
 
+        // column for the workout plans.
         .row > .column {
             display: block;
-            width: 50%;
+            // by default, take up 50% so we have two columns.
+            flex-basis: 50%;
+            // grow to take up all the space when broken onto a new line
+            flex-grow: 1;
 
             // override the ridiculously large h3 sizing that is here by default for some reason
             h3 {
