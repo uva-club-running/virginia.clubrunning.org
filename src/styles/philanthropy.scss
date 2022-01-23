@@ -1,0 +1,15 @@
+@import "base";
+
+.splash {
+    .container {
+        p {
+            line-height: normal;
+            margin-bottom: 0.5rem;
+        }
+
+        .lede {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+    }
+}
