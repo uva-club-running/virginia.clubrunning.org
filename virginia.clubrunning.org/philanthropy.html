@@ -87,4 +87,11 @@
     </div>
     <div class="splash image" style="background-image: url('/static/images/splash/philanthropy/funrun.JPG')">
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        let version = (new Date()).getTime();
+        let script = document.createElement("script");
+        script.src = "static/scripts/app.js?v=" + version;
+        document.body.appendChild(script);
+    </script>
 </body>

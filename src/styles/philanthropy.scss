@@ -1,5 +1,19 @@
 @import "base";
 
+// media query for mobile devices with narrow screens
+@media screen and (max-width: 66rem) {
+    .splash.page-title {
+        .container {
+            .background {
+                h1 {
+                    // make the header smaller so it fits on mobile screens
+                    font-size: 3.0rem;
+                }
+            }
+        }
+    }
+}
+
 .splash {
     .container {
         p {
