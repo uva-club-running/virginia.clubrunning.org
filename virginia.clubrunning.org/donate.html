@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate &vert; Club Running at UVA</title>
+    <link rel="stylesheet" href="static/styles/donate.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8d53">
+    <meta name="msapplication-TileColor" content="#ff8d53">
+    <meta name="theme-color" content="#70b9ee">
+</head>
+
+<body>
+    <div id="header">
+        <a href="." class="site-title">
+            <div class="container">
+                <div class="logo"></div>
+                <h1>Club Running</h1>
+            </div>
+        </a>
+        <div class="site-navigation">
+            <ul>
+                <li><a href=".">about</a></li>
+                <li><a href="join">join</a></li>
+                <li><a href="meets">meets</a></li>
+                <li><a href="philanthropy">philanthropy</a></li>
+                <li><a href="invitational">Cav Invite</a></li>
+                <li><a href="records">records</a></li>
+                <li><a href="charlottesville">Charlottesville</a></li>
+                <li><a href="contact">contact us</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu" onclick="toggleMobileNavigation()">
+            <div class="hamburger hamburger--collapse">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-splash" class="splash page-title image">
+        <div class="container fill">
+            <div class="background orange">
+                <h1>Donate</h1>
+                <h2>Give us your money</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="splash white">
+        <div class="container fill page-content">
+            <h2>Support Club Running</h2>
+            <p>
+                Your contributions help Club Running meet its annual operational expenses.
+                Donations allow us to:
+            </p>
+            <ul>
+                <li>
+                    <p>Subsidize members' social/racing dues</p>
+                </li>
+                <li>
+                    <p>Organize great meets at venues like Lannigan Field and Panorama Farms</p>
+                </li>
+                <li>
+                    <p>Hold fundraising events that benefit the broader community</p>
+                </li>
+            </ul>
+            <p>
+                We are deeply grateful for any support you provide. Donations can be made via <a href="https://account.venmo.com/u/running-club-uva">Venmo.</a>
+                To donate by any other means, please reach out to our <a href="/contact#treasurer">treasurer.</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        let version = (new Date()).getTime();
+        let script = document.createElement("script");
+        script.src = "static/scripts/app.js?v=" + version;
+        document.body.appendChild(script);
+    </script>
+</body>
+
+</html>
