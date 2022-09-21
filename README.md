@@ -50,7 +50,7 @@ You can build the website by running the following command:
 yarn run build
 ```
 
-The build files are placed underneath `./dist/`.
+The built files are placed underneath `./dist/`.
 
 ## Contributing
 The following steps outline the workflow I use for implementing a new feature or making changes to the website.
