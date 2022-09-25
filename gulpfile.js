@@ -15,7 +15,8 @@ function clean() {
  * directly into ./dist/
  */
 function copyStatic() {
-    return gulp.src("./virginia.clubrunning.org/**/*")
+    return gulp.src(["./virginia.clubrunning.org/**/*",
+        "./virginia.clubrunning.org/**/.*"]) // copy hidden files (e.g. .htaccess)
         .pipe(gulp.dest("./dist/"));
 }
 
