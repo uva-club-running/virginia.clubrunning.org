@@ -16,5 +16,6 @@
     "build": "yarn exec gulp build",
     "watch": "yarn exec gulp watch",
     "serve": "yarn exec gulp watch & yarn exec http-server ./dist/"
-  }
+  },
+  "packageManager": "yarn@3.2.3"
 }

@@ -3,3 +3,12 @@
 node_modules/
 # ignore built website files
 dist/
+# from https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+# not using zero-installs
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
