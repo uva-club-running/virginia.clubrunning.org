@@ -16,9 +16,9 @@ jobs:
         with:
           node-version: latest
       - name: Install build dependencies
-        run: yarn install --prod=false
+        run: npm install
       - name: Build website
-        run: yarn run build
+        run: npm run build
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
