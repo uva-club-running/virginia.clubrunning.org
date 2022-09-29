@@ -83,7 +83,7 @@ This repository is configured using GitHub Actions to automatically rebuild and 
 
 Every time new commits are pushed to `main`, the pipeline will be triggered. In principle, this means you should never have to access the FTP server directly. Make your changes locally, push them to Git, and let GitHub actions handle the rest.
 
-*(For more information, see the wiki page [Deployment Deep Dive](https://github.com/uva-club-running/virginia.clubrunning.org/wiki/Deployment-Deep-Dive).*
+*(For more information, see the wiki page [Deployment Deep Dive](https://github.com/uva-club-running/virginia.clubrunning.org/wiki/Deployment-Deep-Dive)).*
 
 ## Contributing
 Club Running's [Webmaster](https://virginia.clubrunning.org/contact) is ultimately responsible for maintaining the site, but contributions from others are certainly welcome.
