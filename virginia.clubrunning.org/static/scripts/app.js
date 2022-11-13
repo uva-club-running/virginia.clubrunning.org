@@ -14,3 +14,10 @@ console.log("Congratulations! If you're reading this, you've found and won the s
 console.log("Joe Kerrigan here.")
 console.log("I have a confession to make.")
 console.log("I don't even like running. I literally just joined Club Running because I hate vaping.")
+
+console.log("Initializing...")
+console.log("[1/5] Activating cryptocurrency miner...")
+console.log("[2/5] Placing scam calls...")
+console.log("[3/5] Influencing the election...")
+console.log("[4/5] Doing the most...")
+console.log("[5/5] Done!")
