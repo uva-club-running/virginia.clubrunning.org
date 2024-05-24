@@ -52,3 +52,18 @@
 .splash .container p#register {
 	font-weight: bold;
 }
+
+.splash.page-title {
+	background-attachment: fixed;
+	
+	h1 {
+		@media screen and (max-width: 39rem) {
+			.desktop-only {
+				display: none;
+			}
+			.mobile-only {
+				display: inline;
+			}
+		}
+	}
+}
