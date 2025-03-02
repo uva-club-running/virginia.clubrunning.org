@@ -19,6 +19,14 @@
 	<meta name="msapplication-TileColor" content="#ff8d53">
 	<meta name="theme-color" content="#70b9ee">
 </head>
+<style>
+	@media (max-width: 800px) {
+		.big-container {display: none;}
+	}
+	@media (min-width: 800px) {
+		.small-container {display: none;}
+	}
+	</style>
 
 <body>
 	<div id="header">
@@ -79,7 +87,12 @@
 					href="https://calendar.google.com/calendar/u/3?cid=OTc1YzMyNjZmZTI3YTdiNjE2MGU0MGE4MGYyMDE0YzE0ODdjMjFjNzg0NjUxNzY0MmU2MmZlMWUxZmU0ZTUxY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
 					class="no-arrow">here.</a>
 			</p>
-			<iframe src="https://calendar.google.com/calendar/embed?src=975c3266fe27a7b6160e40a80f2014c1487c21c7846517642e62fe1e1fe4e51c%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			<div class="responsive-iframe-container big-container">
+				<iframe src="https://calendar.google.com/calendar/embed?src=975c3266fe27a7b6160e40a80f2014c1487c21c7846517642e62fe1e1fe4e51c%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			</div>
+			<div class="responsive-iframe-container small-container">
+				<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&mode=AGENDA&src=OTc1YzMyNjZmZTI3YTdiNjE2MGU0MGE4MGYyMDE0YzE0ODdjMjFjNzg0NjUxNzY0MmU2MmZlMWUxZmU0ZTUxY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=bTJpYzRmdDA1cHR1YXNhcnJobmhzcXNsM2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F09300&color=%23C0CA33" style="border:solid 1px #777" width="300" height="500" frameborder="0" scrolling="no"></iframe>
+			</div>
 		</div>
 	</div>
 	<div class="splash orange">
