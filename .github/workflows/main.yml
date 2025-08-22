@@ -27,5 +27,3 @@ jobs:
           password: ${{ secrets.ftp_password }}
           local-dir: ./dist/
           server-dir: ./virginia.clubrunning.org/
-          protocol: ftps
-          port: 22
