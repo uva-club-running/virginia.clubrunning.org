@@ -22,8 +22,8 @@ jobs:
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: /home/virginia_run/virginia.clubrunning.org
+          server: virginia.clubrunning.org
           username: virginia_run
           password: ${{ secrets.ftp_password }}
           local-dir: ./dist/
-          server-dir: ./virginia.clubrunning.org/
+          server-dir: /home/virginia_run/virginia.clubrunning.org/
