@@ -23,7 +23,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: virginia.clubrunning.org
-          username: virgrun
-          password: ${{ secrets.ftp_password }}
+          username: virginia_run
+          password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: ./virginia.clubrunning.org/
