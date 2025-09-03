@@ -19,15 +19,6 @@ jobs:
         run: npm install
       - name: Build website
         run: npm run build
-      - name: Sync files
-        uses: pressidium/lftp-mirror-action@v1
-        with:
-          host: 'virginia.clubrunning.org'
-          user: 'virginia_run'
-          pass: ${{ secrets.FTP_PASSWORD }}
-          localDir: './dist'
-          remoteDir: '/home/virginia_run/virginia.clubrunning.org'
-          reverse: true
       - name: Deploy to SFTP server
         uses: wangyucode/sftp-upload-action@v2.0.4
         with:
