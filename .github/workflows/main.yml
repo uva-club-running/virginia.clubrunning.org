@@ -20,12 +20,11 @@ jobs:
       - name: Build website
         run: npm run build
       - name: Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: pressidium/lftp-mirror-action@v1
         with:
-          server: virginia.clubrunning.org
-          username: virginia_run
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: sftp
-          port: 22
-          local-dir: ./dist/
-          server-dir: ./virginia.clubrunning.org/
+          host: 'virginia.clubrunning.org'
+          user: 'virginia_run'
+          pass: ${{ secrets.FTP_PASSWORD }}
+          localDir: './dist/'
+          remoteDir: '.'
+          reverse: true
