@@ -26,5 +26,5 @@ jobs:
           user: 'virginia_run'
           pass: ${{ secrets.FTP_PASSWORD }}
           localDir: './dist'
-          remoteDir: './virginia.clubrunning.org'
+          remoteDir: '/home/virginia_run/virginia.clubrunning.org'
           reverse: true
