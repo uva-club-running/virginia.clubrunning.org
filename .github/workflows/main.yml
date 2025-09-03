@@ -25,7 +25,7 @@ jobs:
           server: virginia.clubrunning.org
           username: virginia_run
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
+          protocol: sftp
           port: 22
           local-dir: ./dist/
           server-dir: ./virginia.clubrunning.org/
