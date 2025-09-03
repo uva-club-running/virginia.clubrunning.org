@@ -28,3 +28,13 @@ jobs:
           localDir: './dist'
           remoteDir: '/home/virginia_run/virginia.clubrunning.org'
           reverse: true
+      - name: Deploy to SFTP server
+        uses: wangyucode/sftp-upload-action@v2.0.4
+        with:
+          host: "virginia.clubrunning.org"
+          port: 22
+          username: "virginia_run"
+          password: ${{ secrets.FTP_PASSWORD }}
+          forceUpload: true
+          localDir: "./dist"
+          remoteDir: "/home/virginia_run/virginia.clubrunning.org"
