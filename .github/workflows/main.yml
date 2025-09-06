@@ -28,4 +28,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           forceUpload: false
           localDir: "./dist"
-          remoteDir: "/home/virginia_run/virginia.clubrunning.org"
+          remoteDir: "./virginia.clubrunning.org/"
