@@ -62,7 +62,7 @@
 	<!--JAVASCRIPT REQUIRED-->
 	<div class="splash white" id="schedule">
 		<div class="container fill">
-			<h1>spring 2025 meet schedule</h1>
+			<h1>fall 2025 meet schedule</h1>
 			<br>
 			<table>
 				<thead>
@@ -71,41 +71,40 @@
 						<th>meet</th>
 						<th>location</th>
 						<th>results</th>
-						<tbody>
-							<tr class="home-meet-row">
-								<td>September 13</td>
-								<td>Home meet</td>
-								<td>Panorama Farms</td>
-								<td><a href="https://clubrunning.org/races/race_results.php?race=1345">Results</a></td>
-							</tr>
-							<tr>
-								<td>September 19</td>
-								<td>Virginia Tech NCAA meet</td>
-								<td>Virginia Tech</td>
-								<td>(Results to be posted)</td>
-							</tr>
-							<tr>
-								<td>October 4</td>
-								<td>VCU Cross Country Meet</td>
-								<td>Pole Green in Richmond</td>
-								<td>(Results to be posted)</td>
-							</tr>
-							<tr>
-								<td>October 25</td>
-								<td>NIRCA Regional Meet</td>
-								<td>Panorama Farms</td>
-								<td>(Results to be posted)</td>
-							</tr>
-							<tr>
-								<td>November 8</td>
-								<td>NIRCA Nationals</td>
-								<td>Hershey Park</td>
-								<td>(Results to be posted)</td>
-							</tr>
-						</tbody>
 					</tr>
 				</thead>
-
+				<tbody>
+					<tr class="home-meet-row">
+						<td>September 13</td>
+						<td>Home meet</td>
+						<td>Panorama Farms</td>
+						<td>(Results to be posted)</td>
+					</tr>
+					<tr>
+						<td>September 19</td>
+						<td>Virginia Tech NCAA meet</td>
+						<td>Virginia Tech</td>
+						<td>(More details coming next week!)</td>
+					</tr>
+					<tr>
+						<td>October 4</td>
+						<td>VCU Cross Country Meet</td>
+						<td>Pole Green in Richmond</td>
+						<td>(Results to be posted)</td>
+					</tr>
+					<tr>
+						<td>October 25</td>
+						<td>NIRCA Regional Meet</td>
+						<td>Panorama Farms</td>
+						<td>(Results to be posted)</td>
+					</tr>
+					<tr>
+						<td>November 8</td>
+						<td>NIRCA Nationals</td>
+						<td>Hershey Park</td>
+						<td>(Results to be posted)</td>
+					</tr>
+				</tbody>
 			</table>
 		</div>
 	</div>
@@ -127,58 +126,41 @@
 					<table>
 						<tbody>
 							<tr class="home-meet-row">
-								<td>January 31 - February 1</td>
-								<td>Bast-Cregger Invitational</td>
-								<td>Roanoke College</td>
-								<td><a href="https://snapresults.snaptiming.com/meets/43367">Results</a></td>
+								<td>September 21</td>
+								<td><a href="/invitational">Cav Invite</a></td>
+								<td>University of Virginia</td>
+								<td><a href="https://clubrunning.org/races/race_results.php?race=1243">results</a></td>
 							</tr>
 							<tr>
-								<td>February 7 - 8</td>
-								<td>Liberty Open</td>
-								<td>Liberty University</td>
-								<td><a href="https://www.goinguplive.com/brt/2025-liberty-open/meet-301/schedule.html">Results</a></td>
-							</tr>
-							<tr>
-								<td>February 22</td>
-								<td>Capital Relays</td>
-								<td>American University</td>
-								<td><a href="https://docs.google.com/spreadsheets/d/1zuWh3nQbP7HkKmpXYM1pWBhpejFBTO8Bp7YQzERFlPQ/edit?gid=1735285129#gid=1735285129">Results</a></td>
-							</tr>
-							<tr>
-								<td>March 22</td>
+								<td>September 28</td>
 								<td>Hokie Invitational</td>
 								<td>Virginia Tech</td>
-								<td><a href="http://results.tfmeetpro.com/Laurence_Loesel/Hokie_Invitational_32225/index.html">Results</a></td>
+								<td><a href="https://clubrunning.org/races/race_results.php?race=1266">results</a></td>
 							</tr>
 							<tr>
-								<td>March 28</td>
-								<td>Doc Jopson Invitational</td>
-								<td>Bridgewater College</td>
-								<td><a href="http://results.tfmeetpro.com/Laurence_Loesel/Hokie_Invitational_32225/index.html">Results</a></td>
-							</tr>
-							<tr>
-								<td>March 28 - 29</td>
-								<td>Dr. Jack M. Toms Alumni Invitational</td>
-								<td>Lynchburg College</td>
-								<td><a href="https://libertyflames.com/documents/2025/3/29/2025_Dr._Jack_M._Toms_Alumni_Invitational_Final_Results.pdf ">Results</a></td>
-							</tr>
-							<tr>
-								<td>April 5 - 6</td>
-								<td>NIRCA Nationals</td>
+								<td>October 5</td>
+								<td>VCU Invitational</td>
 								<td>Virginia Commonwealth University</td>
-								<td><a href="http://live.cfpitiming.com/meets/678780/events/22/results/F/F">Results</a></td>
+								<td><a href="https://clubrunning.org/races/race_results.php?race=1258">results</a></td>
 							</tr>
 							<tr>
-								<td>April 18 - 19</td>
-								<td>CNU New Captains Classic & Combined Events</td>
-								<td>Christopher Newport University</td>
-								<td><a href="https://www.tfrrs.org/results/87332/5572937/CNU_New_Captains_Classic__Combined_Events/Mens-3000-Steeplechase">Results</a></td>
+								<td>October 19</td>
+								<td>Nirca Regionals</td>
+								<td>Lehigh University</td>
+								<td><a href="https://clubrunning.org/races/race_results.php?race=1249">results</a></td>
+							</tr>
+							<tr>
+								<td>November 9</td>
+								<td>Nirca Nationals</td>
+								<td>Hershey, PA</td>
+								<td><a
+										href="https://clubrunning.org/races/race_results.php?race=1239">results</a>
+								</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 			</div>
-			<div class="section contains-expandable collapsed">
 				<h4>fall 2024</h4>
 				<div class="expandable">
 					<table>
